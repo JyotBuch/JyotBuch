@@ -13,11 +13,11 @@ Some things you need to know about me are
 
 I spend my time with
 
-![Tableau](https://img.shields.io/badge/Tableau-Business&nbspIntelligence-green)
+![Tableau](https://img.shields.io/badge/Tableau-Business%20Intelligence-green)
 
-![Power BI](https://img.shields.io/badge/Power BI-Business Intelligence-green)
+![Power BI](https://img.shields.io/badge/Power%20BI-Business%20Intelligence-green)
 
-![MS Excel](https://img.shields.io/badge/MS Excel-Business Intelligence-green)
+![MS Excel](https://img.shields.io/badge/MS%20Excel-Business%20Intelligence-green)
 
 ![Sql](https://img.shields.io/badge/MySql-DBMS-orange)
 
@@ -29,11 +29,11 @@ I spend my time with
 
 ![C/C++](https://img.shields.io/badge/C/C++-Language-blue)
 
-![Machine Learning](https://img.shields.io/badge/Machine Learning-Technology-pink)
+![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Technology-pink)
 
-![Data Analytics](https://img.shields.io/badge/Data Analytics-Technology-pink)
+![Data Analytics](https://img.shields.io/badge/Data%20Analytics-Technology-pink)
 
-![Dashboard Creation and Reporting](https://img.shields.io/badge/Business Analytics-Technology-pink)
+![Dashboard Creation and Reporting](https://img.shields.io/badge/Business%20Analytics-Technology-pink)
 
 
 ![](https://komarev.com/ghpvc/?username=JyotBuch)
