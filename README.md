@@ -1,4 +1,4 @@
-[![Jyot Buch Header](https://github.com/JyotBuch/Jyot-Buch/blob/master/Images/banner.png)]
+![Jyot Buch Header](https://github.com/JyotBuch/Jyot-Buch/blob/master/Images/banner.png)
 
 <p>
   <a href="https://waylonwalker.com/latest-story.png"><img width="150" align='right' src="https://waylonwalker.com/latest-story.png"></a>
