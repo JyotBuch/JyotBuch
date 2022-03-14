@@ -25,7 +25,6 @@ I spend my time with
 ![Data Analytics](https://img.shields.io/badge/Data%20Analytics-Technology-pink)
 ![Dashboard Creation and Reporting](https://img.shields.io/badge/Business%20Analytics-Technology-pink)
 ![Rensorflow](https://img.shields.io/badge/Tensorflow-Technology-pink)
-https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white
 
 
 My Blog Link
