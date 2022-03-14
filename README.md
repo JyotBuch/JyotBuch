@@ -13,7 +13,7 @@ Some things you need to know about me are
 
 I spend my time with
 
-![Tableau](https://img.shields.io/badge/Tableau-Business\ Intelligence-green)
+![Tableau](https://img.shields.io/badge/Tableau-Business&nbspIntelligence-green)
 
 ![Power BI](https://img.shields.io/badge/Power BI-Business Intelligence-green)
 
