@@ -31,7 +31,7 @@ https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoC
 My Blog Link
 
 <a href="https://medium.com/@bjyot2012">
-<img src="https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white" /> | `https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white`
+<img src="https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white" />
 </a>
 
 ![](https://komarev.com/ghpvc/?username=JyotBuch)
