@@ -32,9 +32,19 @@ My Blog Link
 <a href="https://medium.com/@bjyot2012">
 <img src="https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white" />
 </a>
-
-
-
+<br>
+<a href="https://www.instagram.com/_its.jyot_/?hl=en">
+<img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" />
+</a>
+<br>
+<a href="https://www.kaggle.com/jyotbuch">
+<img src="https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=Kaggle&logoColor=white" />
+</a>
+<br>
+<a href="https://www.linkedin.com/in/jyot-buch-1b76711b3/">
+<img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
+</a>
+<br>
 Git Hits
 
 ![](https://komarev.com/ghpvc/?username=JyotBuch)
