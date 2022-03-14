@@ -5,6 +5,7 @@ Hey there 👋,
 Welcome to my profile
 
 Some things you need to know about me are
+
 -I'm an aspiring Data Scientist 💻
 -I'm a dedicated Athlete (Not a bluff guys!)🏃
 -I'm currently working more on Mathematic intuition behind Machine Learning Algorithms🔢
