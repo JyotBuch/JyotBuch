@@ -1,6 +1,3 @@
-![Jyot Buch Header](https://github.com/JyotBuch/Jyot-Buch/blob/master/Images/banner.png)
-
-
 Hey there 👋,
 Welcome to my profile
 
