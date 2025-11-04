@@ -1,4 +1,39 @@
+import useScrollAnimation from '../hooks/useScrollAnimation';
+
+const SkillCategory = ({ category, index }) => {
+  const [cardRef, cardVisible] = useScrollAnimation({ threshold: 0.1 });
+  
+  return (
+    <div
+      ref={cardRef}
+      className={`bg-gradient-to-br from-white to-gray-50 dark:from-gray-800 dark:to-gray-900 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 p-6 border border-gray-200 dark:border-gray-700 animate-on-scroll-scale ${cardVisible ? 'is-visible' : ''}`}
+      style={{ transitionDelay: `${(index % 3) * 0.1}s` }}
+    >
+      <div className="flex items-center mb-4">
+        <div className={`p-3 bg-${category.color}-100 dark:bg-${category.color}-900/30 rounded-lg text-${category.color}-600 dark:text-${category.color}-400 mr-3`}>
+          {category.icon}
+        </div>
+        <h3 className="font-display font-bold text-xl text-gray-900 dark:text-white">
+          {category.title}
+        </h3>
+      </div>
+      <div className="flex flex-wrap gap-2">
+        {category.skills.map((skill, skillIndex) => (
+          <span
+            key={skillIndex}
+            className={`px-3 py-1 bg-${category.color}-50 dark:bg-${category.color}-900/20 text-${category.color}-700 dark:text-${category.color}-300 rounded-full text-sm font-medium hover:scale-105 transition-transform`}
+          >
+            {skill}
+          </span>
+        ))}
+      </div>
+    </div>
+  );
+};
+
 const Skills = () => {
+  const [titleRef, titleVisible] = useScrollAnimation({ threshold: 0.2 });
+  
   const skillCategories = [
     {
       title: "Programming Languages",
@@ -18,7 +53,7 @@ const Skills = () => {
           <path fillRule="evenodd" d="M7 2a1 1 0 012 0v1h2V2a1 1 0 112 0v1h2a2 2 0 012 2v2h1a1 1 0 110 2h-1v2h1a1 1 0 110 2h-1v2a2 2 0 01-2 2h-2v1a1 1 0 11-2 0v-1H9v1a1 1 0 11-2 0v-1H5a2 2 0 01-2-2v-2H2a1 1 0 110-2h1V9H2a1 1 0 010-2h1V5a2 2 0 012-2h2V2zM5 5h10v10H5V5z" clipRule="evenodd" />
         </svg>
       ),
-      skills: ["PyTorch", "Transformers", "LLMs (Claude, GPT)", "RAG Systems", "YOLO", "Tesseract OCR", "Computer Vision", "NLP", "Deep Learning", "Supervised/Unsupervised Learning"],
+      skills: ["PyTorch", "Transformers", "LLMs", "RAG Systems", "YOLO", "Tesseract OCR", "Computer Vision", "NLP", "Deep Learning", "Supervised/Unsupervised Learning"],
       color: "accent"
     },
     {
@@ -48,7 +83,7 @@ const Skills = () => {
           <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
         </svg>
       ),
-      skills: ["Retrieval-Augmented Generation", "Knowledge Graphs", "Information Retrieval", "Robotic Process Automation", "Prompt Engineering", "Data Visualization", "Predictive Modeling"],
+      skills: ["Knowledge Graphs", "Information Retrieval", "Robotic Process Automation", "Prompt Engineering", "Data Visualization", "Predictive Modeling"],
       color: "primary"
     }
   ];
@@ -56,7 +91,10 @@ const Skills = () => {
   return (
     <section id="skills" className="py-20 bg-white dark:bg-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12 animate-slide-up">
+        <div 
+          ref={titleRef}
+          className={`text-center mb-12 animate-on-scroll ${titleVisible ? 'is-visible' : ''}`}
+        >
           <h2 className="font-display font-bold text-4xl md:text-5xl text-gray-900 dark:text-white mb-4">
             Technical Skills
           </h2>
@@ -68,31 +106,7 @@ const Skills = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {skillCategories.map((category, index) => (
-            <div
-              key={index}
-              className="bg-gradient-to-br from-white to-gray-50 dark:from-gray-800 dark:to-gray-900 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 p-6 border border-gray-200 dark:border-gray-700 animate-slide-up"
-              style={{ animationDelay: `${index * 0.1}s` }}
-            >
-              <div className="flex items-center mb-4">
-                <div className={`p-3 bg-${category.color}-100 dark:bg-${category.color}-900/30 rounded-lg text-${category.color}-600 dark:text-${category.color}-400 mr-3`}>
-                  {category.icon}
-                </div>
-                <h3 className="font-display font-bold text-xl text-gray-900 dark:text-white">
-                  {category.title}
-                </h3>
-              </div>
-
-              <div className="flex flex-wrap gap-2">
-                {category.skills.map((skill, skillIndex) => (
-                  <span
-                    key={skillIndex}
-                    className={`px-3 py-1.5 bg-${category.color}-50 dark:bg-${category.color}-900/20 text-${category.color}-700 dark:text-${category.color}-300 rounded-lg text-sm font-medium hover:scale-105 transition-transform duration-200 cursor-default`}
-                  >
-                    {skill}
-                  </span>
-                ))}
-              </div>
-            </div>
+            <SkillCategory key={index} category={category} index={index} />
           ))}
         </div>
 

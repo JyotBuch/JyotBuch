@@ -1,8 +1,17 @@
+import useScrollAnimation from '../hooks/useScrollAnimation';
+
 const About = () => {
+  const [titleRef, titleVisible] = useScrollAnimation({ threshold: 0.2 });
+  const [para1Ref, para1Visible] = useScrollAnimation({ threshold: 0.2 });
+  const [para2Ref, para2Visible] = useScrollAnimation({ threshold: 0.2 });
+
   return (
     <section id="about" className="py-20 bg-white dark:bg-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12 animate-slide-up">
+        <div 
+          ref={titleRef}
+          className={`text-center mb-12 animate-on-scroll ${titleVisible ? 'is-visible' : ''}`}
+        >
           <h2 className="font-display font-bold text-4xl md:text-5xl text-gray-900 dark:text-white mb-4">
             About Me
           </h2>
@@ -11,7 +20,11 @@ const About = () => {
 
         <div className="max-w-4xl mx-auto">
           <div className="space-y-6 text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-            <p className="animate-fade-in">
+            <p 
+              ref={para1Ref}
+              className={`animate-on-scroll ${para1Visible ? 'is-visible' : ''}`}
+              style={{ transitionDelay: '0.1s' }}
+            >
               I&apos;m a graduate student at the University of Illinois, Urbana-Champaign, specializing in 
               <span className="font-semibold text-primary-600 dark:text-primary-400"> data analytics</span>, 
               <span className="font-semibold text-primary-600 dark:text-primary-400"> machine learning</span>, 
@@ -31,7 +44,11 @@ const About = () => {
               solving complex problems at the intersection of data science and real-world applications.
             </p> */}
 
-            <p className="animate-fade-in" style={{ animationDelay: '0.4s' }}>
+            <p 
+              ref={para2Ref}
+              className={`animate-on-scroll ${para2Visible ? 'is-visible' : ''}`}
+              style={{ transitionDelay: '0.2s' }}
+            >
               Currently, I serve as a <span className="font-semibold">Teaching Assistant</span> at UIUC&apos;s 
               Gies College of Business, where I&apos;m building cutting-edge Graph-RAG pipelines and integrating LLMs for 
               educational feedback systems. I&apos;m also excited to join the <span className="font-semibold">ScienceNLP lab</span> as 

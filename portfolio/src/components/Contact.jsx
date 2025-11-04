@@ -1,4 +1,10 @@
+import useScrollAnimation from '../hooks/useScrollAnimation';
+
 const Contact = () => {
+  const [titleRef, titleVisible] = useScrollAnimation({ threshold: 0.2 });
+  const [infoRef, infoVisible] = useScrollAnimation({ threshold: 0.1 });
+  const [socialRef, socialVisible] = useScrollAnimation({ threshold: 0.1 });
+  
   const contactInfo = [
     {
       label: "Email",
@@ -69,7 +75,10 @@ const Contact = () => {
   return (
     <section id="contact" className="py-20 bg-white dark:bg-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12 animate-slide-up">
+        <div 
+          ref={titleRef}
+          className={`text-center mb-12 animate-on-scroll ${titleVisible ? 'is-visible' : ''}`}
+        >
           <h2 className="font-display font-bold text-4xl md:text-5xl text-gray-900 dark:text-white mb-4">
             Get In Touch
           </h2>
@@ -81,12 +90,14 @@ const Contact = () => {
 
         <div className="max-w-4xl mx-auto">
           {/* Contact Information */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+          <div 
+            ref={infoRef}
+            className={`grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 animate-on-scroll ${infoVisible ? 'is-visible' : ''}`}
+          >
             {contactInfo.map((info, index) => (
               <div
                 key={index}
-                className="bg-gradient-to-br from-primary-50 to-accent-50 dark:from-gray-800 dark:to-gray-700 rounded-xl p-6 text-center animate-slide-up hover:shadow-lg transition-shadow duration-300"
-                style={{ animationDelay: `${index * 0.1}s` }}
+                className="bg-gradient-to-br from-primary-50 to-accent-50 dark:from-gray-800 dark:to-gray-700 rounded-xl p-6 text-center hover:shadow-lg transition-shadow duration-300"
               >
                 <div className="inline-flex items-center justify-center w-12 h-12 bg-primary-600 text-white rounded-full mb-4">
                   {info.icon}
@@ -111,7 +122,10 @@ const Contact = () => {
           </div>
 
           {/* Social Links */}
-          <div className="bg-gradient-to-br from-white to-gray-50 dark:from-gray-800 dark:to-gray-900 rounded-2xl shadow-xl p-8 animate-fade-in">
+          <div 
+            ref={socialRef}
+            className={`bg-gradient-to-br from-white to-gray-50 dark:from-gray-800 dark:to-gray-900 rounded-2xl shadow-xl p-8 animate-on-scroll-scale ${socialVisible ? 'is-visible' : ''}`}
+          >
             <h3 className="font-display font-bold text-2xl text-gray-900 dark:text-white text-center mb-6">
               Connect With Me
             </h3>

@@ -1,4 +1,73 @@
+import useScrollAnimation from '../hooks/useScrollAnimation';
+
+const PublicationCard = ({ pub, index }) => {
+  const [cardRef, cardVisible] = useScrollAnimation({ threshold: 0.1 });
+  
+  return (
+    <div
+      ref={cardRef}
+      className={`bg-white dark:bg-gray-900 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 p-6 border-l-4 ${
+        pub.type === 'Journal Article' ? 'border-primary-500' : 'border-accent-500'
+      } animate-on-scroll ${cardVisible ? 'is-visible' : ''}`}
+      style={{ transitionDelay: `${index * 0.1}s` }}
+    >
+      <div className="flex items-start justify-between mb-3">
+        <span className={`px-3 py-1 rounded-full text-xs font-semibold ${
+          pub.type === 'Journal Article'
+            ? 'bg-primary-100 text-primary-700 dark:bg-primary-900/30 dark:text-primary-300'
+            : 'bg-accent-100 text-accent-700 dark:bg-accent-900/30 dark:text-accent-300'
+        }`}>
+          {pub.type}
+        </span>
+        <span className="text-sm text-gray-500 dark:text-gray-400">{pub.date}</span>
+      </div>
+
+      <h3 className="font-display font-bold text-xl text-gray-900 dark:text-white mb-2">
+        {pub.title}
+      </h3>
+
+      <p className="text-gray-600 dark:text-gray-400 text-sm mb-2">
+        <span className="font-semibold">Authors:</span> {pub.authors}
+      </p>
+
+      {pub.journal && (
+        <p className="text-primary-600 dark:text-primary-400 font-semibold mb-3">
+          {pub.journal}
+        </p>
+      )}
+
+      {pub.conference && (
+        <p className="text-accent-600 dark:text-accent-400 font-semibold mb-3">
+          {pub.conference}
+        </p>
+      )}
+
+      <p className="text-gray-700 dark:text-gray-300 text-sm mb-4">
+        {pub.abstract}
+      </p>
+
+      {pub.link && (
+        <a
+          href={pub.link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center px-4 py-2 bg-primary-600 hover:bg-primary-700 text-white rounded-lg transition-colors text-sm font-medium"
+        >
+          <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+          </svg>
+          Read Paper
+        </a>
+      )}
+    </div>
+  );
+};
+
 const Publications = () => {
+  const [pubTitleRef, pubTitleVisible] = useScrollAnimation({ threshold: 0.2 });
+  const [certTitleRef, certTitleVisible] = useScrollAnimation({ threshold: 0.2 });
+  const [honorsTitleRef, honorsTitleVisible] = useScrollAnimation({ threshold: 0.2 });
+  
   const publications = [
     {
       title: "Drinking water potability prediction using machine learning approaches: a case study of Indian rivers",
@@ -77,7 +146,10 @@ const Publications = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Publications */}
         <div className="mb-16">
-          <div className="text-center mb-12 animate-slide-up">
+          <div 
+            ref={pubTitleRef}
+            className={`text-center mb-12 animate-on-scroll ${pubTitleVisible ? 'is-visible' : ''}`}
+          >
             <h2 className="font-display font-bold text-4xl md:text-5xl text-gray-900 dark:text-white mb-4">
               Publications & Research
             </h2>
@@ -86,51 +158,17 @@ const Publications = () => {
 
           <div className="space-y-6">
             {publications.map((pub, index) => (
-              <div
-                key={index}
-                className="bg-white dark:bg-gray-900 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 p-6 animate-slide-up"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                <div className="flex flex-col md:flex-row md:items-start md:justify-between">
-                  <div className="flex-1 mb-4 md:mb-0">
-                    <div className="flex items-center gap-3 mb-2">
-                      <span className="px-3 py-1 bg-primary-100 dark:bg-primary-900/30 text-primary-700 dark:text-primary-300 rounded-full text-xs font-semibold">
-                        {pub.type}
-                      </span>
-                      <span className="text-gray-500 dark:text-gray-400 text-sm">{pub.date}</span>
-                    </div>
-                    <h3 className="font-display font-bold text-xl text-gray-900 dark:text-white mb-2">
-                      {pub.title}
-                    </h3>
-                    <p className="text-gray-600 dark:text-gray-400 text-sm mb-2">
-                      {pub.authors} • <span className="font-semibold">{pub.journal || pub.conference}</span>
-                    </p>
-                    <p className="text-gray-700 dark:text-gray-300 text-sm">
-                      {pub.abstract}
-                    </p>
-                  </div>
-                  {pub.link && (
-                    <a
-                      href={pub.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center px-4 py-2 bg-primary-600 hover:bg-primary-700 text-white rounded-lg transition-colors whitespace-nowrap"
-                    >
-                      <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                      </svg>
-                      Read Paper
-                    </a>
-                  )}
-                </div>
-              </div>
+              <PublicationCard key={index} pub={pub} index={index} />
             ))}
           </div>
         </div>
 
         {/* Certifications */}
         <div className="mb-16">
-          <div className="text-center mb-12 animate-slide-up">
+          <div 
+            ref={certTitleRef}
+            className={`text-center mb-12 animate-on-scroll ${certTitleVisible ? 'is-visible' : ''}`}
+          >
             <h2 className="font-display font-bold text-4xl md:text-5xl text-gray-900 dark:text-white mb-4">
               Certifications
             </h2>
@@ -166,7 +204,10 @@ const Publications = () => {
 
         {/* Honors & Awards */}
         <div>
-          <div className="text-center mb-12 animate-slide-up">
+          <div 
+            ref={honorsTitleRef}
+            className={`text-center mb-12 animate-on-scroll ${honorsTitleVisible ? 'is-visible' : ''}`}
+          >
             <h2 className="font-display font-bold text-4xl md:text-5xl text-gray-900 dark:text-white mb-4">
               Honors & Awards
             </h2>
