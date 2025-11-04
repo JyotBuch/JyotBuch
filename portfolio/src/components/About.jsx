@@ -21,7 +21,7 @@ const About = () => {
               a strong foundation in building intelligent automation systems and deploying production-ready ML solutions.
             </p>
 
-            <p className="animate-fade-in" style={{ animationDelay: '0.2s' }}>
+            {/* <p className="animate-fade-in" style={{ animationDelay: '0.2s' }}>
               My passion lies in transforming raw data into strategic insights through 
               <span className="font-semibold text-accent-600 dark:text-accent-400"> predictive modeling</span>, 
               <span className="font-semibold text-accent-600 dark:text-accent-400"> artificial intelligence</span>, and 
@@ -29,10 +29,10 @@ const About = () => {
               Whether it&apos;s extracting entities from financial documents with 95%+ accuracy, building graph-based knowledge 
               systems for personalized learning, or developing computer vision pipelines for sports analytics, I thrive on 
               solving complex problems at the intersection of data science and real-world applications.
-            </p>
+            </p> */}
 
             <p className="animate-fade-in" style={{ animationDelay: '0.4s' }}>
-              Currently, I serve as a <span className="font-semibold">Teaching and Research Assistant</span> at UIUC&apos;s 
+              Currently, I serve as a <span className="font-semibold">Teaching Assistant</span> at UIUC&apos;s 
               Gies College of Business, where I&apos;m building cutting-edge Graph-RAG pipelines and integrating LLMs for 
               educational feedback systems. I&apos;m also excited to join the <span className="font-semibold">ScienceNLP lab</span> as 
               a Research Assistant in Spring 2026, where I&apos;ll continue pushing the boundaries of natural language processing 

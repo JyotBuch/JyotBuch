@@ -5,7 +5,7 @@ const Publications = () => {
       journal: "Water Practice & Technology",
       date: "Dec 2023",
       authors: "Jyot Buch et al.",
-      link: "#", // Placeholder - Update with actual DOI or link
+      link: "https://doi.org/10.2166/wpt.2023.202", // Placeholder - Update with actual DOI or link
       abstract: "Research on predicting water potability using ML techniques for Indian rivers.",
       type: "Journal Article"
     },
@@ -14,7 +14,7 @@ const Publications = () => {
       conference: "ALUCAST, India",
       date: "Jan 2022",
       authors: "Jyot Buch",
-      link: "#", // Placeholder
+      // link: "#", // Placeholder
       abstract: "Presented research on AI/ML applications in manufacturing processes.",
       type: "Conference Paper"
     }
@@ -109,17 +109,19 @@ const Publications = () => {
                       {pub.abstract}
                     </p>
                   </div>
-                  <a
-                    href={pub.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center px-4 py-2 bg-primary-600 hover:bg-primary-700 text-white rounded-lg transition-colors whitespace-nowrap"
-                  >
-                    <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                    </svg>
-                    Read Paper
-                  </a>
+                  {pub.link && (
+                    <a
+                      href={pub.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center px-4 py-2 bg-primary-600 hover:bg-primary-700 text-white rounded-lg transition-colors whitespace-nowrap"
+                    >
+                      <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                      </svg>
+                      Read Paper
+                    </a>
+                  )}
                 </div>
               </div>
             ))}

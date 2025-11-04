@@ -29,7 +29,7 @@ const Hero = () => {
             </div>
             
             <h2 className="text-2xl md:text-3xl text-gray-700 dark:text-gray-300 font-medium">
-              Data Scientist | Machine Learning Engineer | Statistics Graduate Student
+              Data Scientist | Applied Scientist | AI Engineer | Statistics Graduate Student
             </h2>
             
             <div className="space-y-2 text-lg text-gray-600 dark:text-gray-400">
@@ -37,14 +37,14 @@ const Hero = () => {
                 <svg className="w-5 h-5 mr-2 text-accent-600" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
                 </svg>
-                MSc Statistics @ UIUC
+                MSc in Statistics @ The University of Illinois, Urbana-Champaign
               </p>
               <p className="flex items-center">
                 <svg className="w-5 h-5 mr-2 text-accent-600" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clipRule="evenodd" />
                   <path d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z" />
                 </svg>
-                Incoming Research Assistant @ ScienceNLP (Spring 2026)
+                Incoming Research Assistant @ ScienceNLP (Spring 2026), Prev - Amazon, Eaton
               </p>
               <p className="flex items-center">
                 <svg className="w-5 h-5 mr-2 text-accent-600" fill="currentColor" viewBox="0 0 20 20">
@@ -57,7 +57,7 @@ const Hero = () => {
             {/* CTA Buttons */}
             <div className="flex flex-wrap gap-4 pt-4">
               <a
-                href="#"
+                href="/JyotBuch/documents/Data_Scientist (7).pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-8 py-3 bg-primary-600 hover:bg-primary-700 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"

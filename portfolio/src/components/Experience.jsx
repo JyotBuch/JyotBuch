@@ -1,26 +1,25 @@
 const Experience = () => {
   const experiences = [
     {
-      title: "Data Science Intern",
-      company: "Amazon",
-      duration: "May 2025 – Aug 2025",
-      location: "Seattle, WA",
-      type: "Internship",
-      logo: "/JyotBuch/logos/amazon.png", // Add your logo here
+      title: "Research Assistant",
+      company: "ScienceNLP Lab, University of Illinois Urbana-Champaign",
+      duration: "Jan 2026 – May 2026",
+      location: "Champaign, IL",
+      type: "Research",
+      logo: "/JyotBuch/logos/uiuc.png",
       achievements: [
-        "Built FinLens: document-agnostic entity extraction pipeline using AWS Bedrock, S3, Lambda with >95% accuracy",
-        "Enhanced Minerva RAG system with multimodal capabilities, improved BM25 Recall@10 by 8%",
-        "Designed novel intent-aware completeness recall metric for summarization evaluation"
+        "Developed and fine-tuned LLM-based models to automatically extract treatment-mechanism-outcome relationships from medical research papers",
+        "Built knowledge graphs connecting complementary medicine interventions to biological pathways and clinical outcomes using annotated biomedical datasets"
       ],
-      tags: ["AWS Bedrock", "RAG", "NLP", "Entity Extraction", "Lambda"]
+      tags: ["LLM Fine-tuning", "NLP", "Knowledge Graphs", "Biomedical NLP", "Relation Extraction"]
     },
     {
-      title: "Teaching & Research Assistant",
+      title: "Teaching Assistant",
       company: "University of Illinois, Urbana-Champaign",
       duration: "Aug 2025 – Present",
       location: "Champaign, IL",
       type: "Research",
-      logo: "/JyotBuch/logos/uiuc.png", // Add your logo here
+      logo: "/JyotBuch/logos/uiuc.png",
       achievements: [
         "Built Graph-RAG pipeline linking PostgreSQL and Neo4j for student-assessment-error knowledge graph",
         "Integrated LLMs for personalized feedback with performance tracking",
@@ -29,12 +28,26 @@ const Experience = () => {
       tags: ["Graph-RAG", "Neo4j", "PostgreSQL", "LLMs", "AWS LocalStack"]
     },
     {
+      title: "Data Science Intern",
+      company: "Amazon",
+      duration: "May 2025 – Aug 2025",
+      location: "Seattle, WA",
+      type: "Internship",
+      logo: "/JyotBuch/logos/amazon.png",
+      achievements: [
+        "Built FinLens: document-agnostic entity extraction pipeline using AWS Bedrock, S3, Lambda with >95% accuracy",
+        "Enhanced Minerva RAG system with multimodal capabilities, improved BM25 Recall@10 by 8%",
+        "Designed novel intent-aware completeness recall metric for summarization evaluation"
+      ],
+      tags: ["AWS Bedrock", "RAG", "NLP", "Entity Extraction", "Lambda"]
+    },
+    {
       title: "Automation Developer",
       company: "Accelirate Softech",
       duration: "Dec 2023 – Jul 2024",
       location: "Pune, India",
       type: "Full-time",
-      logo: "/JyotBuch/logos/accelirate.png", // Add your logo here
+      logo: "/JyotBuch/logos/accelirate.png",
       achievements: [
         "Built intelligent invoice processing workflow using UiPath Agents with computer vision and LLMs",
         "Developed SQL procedures for compliance checking and exception reporting",
@@ -48,7 +61,7 @@ const Experience = () => {
       duration: "Aug 2022 – Dec 2022",
       location: "Pune, India",
       type: "Internship",
-      logo: "/JyotBuch/logos/eaton.png", // Add your logo here
+      logo: "/JyotBuch/logos/eaton.png",
       achievements: [
         "Developed Drawing-to-Data (D2D) tool using YOLOv5 and Tesseract OCR (91% detection accuracy, 93% OCR precision)",
         "Built automated compliance mapping system for engineering drawings",
@@ -154,7 +167,7 @@ const Experience = () => {
                         {exp.achievements.map((achievement, achIndex) => (
                           <li key={achIndex} className="flex items-start text-gray-700 dark:text-gray-300 text-sm">
                             <svg className="w-5 h-5 mr-2 text-accent-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                              <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                              <circle cx="10" cy="10" r="3" />
                             </svg>
                             {achievement}
                           </li>

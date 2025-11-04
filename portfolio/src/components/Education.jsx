@@ -12,7 +12,8 @@ const Education = () => {
         "Deep Learning for Computer Vision",
         "Unsupervised Learning",
         "Bayesian Analysis",
-        "Statistical Learning"
+        "Statistical Learning",
+        "Probability and Statistics"
       ],
       color: "primary"
     },
@@ -26,7 +27,8 @@ const Education = () => {
       coursework: [
         "Database Management Systems",
         "Big Data Analytics",
-        "Data Mining and Predictive Modeling"
+        "Data Mining and Predictive Modeling",
+        "Data Structures and Algorithms"
       ],
       color: "accent"
     }

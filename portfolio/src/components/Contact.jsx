@@ -36,7 +36,7 @@ const Contact = () => {
   const socialLinks = [
     {
       name: "LinkedIn",
-      href: "#", // Placeholder - Update with actual LinkedIn URL
+      href: "https://www.linkedin.com/in/jyot-buch/",
       icon: (
         <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
           <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
@@ -56,23 +56,13 @@ const Contact = () => {
     },
     {
       name: "Google Scholar",
-      href: "#", // Placeholder - Update with actual Google Scholar profile
+      href: "https://scholar.google.com/citations?user=wjriI5MAAAAJ&hl=en&oi=ao",
       icon: (
         <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
           <path d="M12 24a7 7 0 110-14 7 7 0 010 14zm0-24L0 9.5l4.838 3.94A8 8 0 0112 9a8 8 0 017.162 4.44L24 9.5z"/>
         </svg>
       ),
       color: "bg-blue-500 hover:bg-blue-600"
-    },
-    {
-      name: "Twitter",
-      href: "#", // Placeholder - Optional
-      icon: (
-        <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-        </svg>
-      ),
-      color: "bg-black hover:bg-gray-900 dark:bg-gray-800 dark:hover:bg-gray-700"
     }
   ];
 
