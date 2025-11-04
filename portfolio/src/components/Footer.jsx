@@ -72,7 +72,7 @@ const Footer = () => {
               Jyot Buch
             </h3>
             <p className="text-gray-600 dark:text-gray-400 text-sm">
-              Data Scientist | ML Engineer | Statistics Graduate Student
+              Data Scientist | AI Engineer | Statistics Graduate Student
             </p>
             <p className="text-gray-500 dark:text-gray-500 text-xs">
               Transforming data into strategic insights through ML and AI
