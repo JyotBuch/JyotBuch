@@ -13,8 +13,8 @@ const Experience = () => {
       type: "Research",
       logo: "/JyotBuch/logos/uiuc.png",
       achievements: [
-        "Developed and fine-tuned LLM-based models to automatically extract treatment-mechanism-outcome relationships from medical research papers",
-        "Built knowledge graphs connecting complementary medicine interventions to biological pathways and clinical outcomes using annotated biomedical datasets"
+        "Developing knowledge graph integration and RAG-based QA system for NIH-funded biomedical research, building transformer-based entity extraction pipeline using BERT and graph neural networks for automated hypothesis generation from literature.",
+        "Engineered LLM-based reranking system using FLAN-T5 and GPT prompting for multi-ontology entity disambiguation, implementing dense retrieval baselines and fine-tuning models on domain-specific data to improve entity linking accuracy."
       ],
       tags: ["LLM Fine-tuning", "NLP", "Knowledge Graphs", "Biomedical NLP", "Relation Extraction"]
     },
