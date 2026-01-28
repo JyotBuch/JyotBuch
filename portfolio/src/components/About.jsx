@@ -49,11 +49,10 @@ const About = () => {
               className={`animate-on-scroll ${para2Visible ? 'is-visible' : ''}`}
               style={{ transitionDelay: '0.2s' }}
             >
-              Currently, I serve as a <span className="font-semibold">Teaching Assistant</span> at UIUC&apos;s 
-              Gies College of Business, where I&apos;m building cutting-edge Graph-RAG pipelines and integrating LLMs for 
-              educational feedback systems. I&apos;m also excited to join the <span className="font-semibold">ScienceNLP lab</span> as 
-              a Research Assistant in Spring 2026, where I&apos;ll continue pushing the boundaries of natural language processing 
-              and AI research.
+              Currently, I&apos;m working as a <span className="font-semibold">Research Assistant</span> at 
+              the ScienceNLP lab, developing knowledge graph integration and RAG-based QA systems for NIH-funded biomedical 
+              research, building transformer-based entity extraction pipelines, and engineering LLM-based reranking systems for 
+              multi-ontology entity disambiguation.
             </p>
 
             {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-8 animate-slide-up" style={{ animationDelay: '0.6s' }}>
