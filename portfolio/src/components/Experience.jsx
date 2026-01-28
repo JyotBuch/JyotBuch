@@ -13,8 +13,8 @@ const Experience = () => {
       type: "Research",
       logo: "/JyotBuch/logos/uiuc.png",
       achievements: [
-        "Developing knowledge graph integration and RAG-based QA system for NIH-funded biomedical research, building transformer-based entity extraction pipeline using BERT and graph neural networks for automated hypothesis generation from literature.",
-        "Engineered LLM-based reranking system using FLAN-T5 and GPT prompting for multi-ontology entity disambiguation, implementing dense retrieval baselines and fine-tuning models on domain-specific data to improve entity linking accuracy."
+        "Developing knowledge graph integration and RAG-based QA system for NIH-funded biomedical research, building transformer-based entity extraction pipeline using BERT and graph neural networks for automated hypothesis generation from literature",
+        "Engineered LLM-based reranking system using FLAN-T5 and GPT prompting for multi-ontology entity disambiguation, implementing dense retrieval baselines and fine-tuning models on domain-specific data to improve entity linking accuracy"
       ],
       tags: ["LLM Fine-tuning", "NLP", "Knowledge Graphs", "Biomedical NLP", "Relation Extraction"]
     },
