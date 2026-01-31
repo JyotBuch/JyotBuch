@@ -90,6 +90,17 @@ const Projects = () => {
 
   const projects = [
     {
+      title: "Terminal Agent",
+      description: "AI-powered terminal assistant that automatically suggests fixes when commands fail. Captures errors, searches Stack Overflow using FAISS semantic search, and uses GPT-4 to generate contextual solutions.",
+      achievement: "Intelligent error resolution with LLM-powered debugging",
+      date: "Jan 2026",
+      tags: ["LLMs", "GPT-4", "FAISS", "LangChain", "Flask"],
+      category: ["NLP", "ML", "Web Development"],
+      github: "https://github.com/JyotBuch/terminal-agent",
+      demo: null,
+      image: null
+    },
+    {
       title: "Dribble.AI",
       description: "AI-powered video analysis for soccer using CNN-Transformer hybrid. Detects passes, shots, and transitions from SoccerNet dataset with temporal attention mechanisms.",
       achievement: "Achieved 0.713 mAP@0.75 score",
