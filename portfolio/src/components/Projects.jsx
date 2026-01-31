@@ -96,7 +96,7 @@ const Projects = () => {
       date: "Apr–May 2025",
       tags: ["Computer Vision", "Deep Learning", "PyTorch", "Transformers"],
       category: ["Computer Vision", "Deep Learning"],
-      github: "#", // Placeholder
+      github: "https://github.com/JyotBuch/DribbleAI", // Placeholder
       demo: null,
       image: null // Placeholder
     },
@@ -107,7 +107,7 @@ const Projects = () => {
       date: "Summer 2025",
       tags: ["AWS Bedrock", "NLP", "Entity Extraction", "Serverless"],
       category: ["NLP", "Cloud"],
-      github: null, // Corporate project
+      github: "https://www.wsj.com/articles/amazon-leans-into-generative-ai-to-manage-its-finances-c77b16eb?gaa_at=eafs&gaa_n=AWEtsqfdACwAo03ZxXsqO53vxgdQIppilJgQH3xVep4jwoPeFDAsg3dugJTv&gaa_ts=697d790d&gaa_sig=1GzyvW_zlAlkVLm1QGJMlYP7ZF3fo_k1OHZ5mnoc5LCSWIil1al3MNxSAJB6_ODfHLoQIpeqgseCUinWofXiOw%3D%3D", // Corporate project
       demo: null,
       image: null
     },
@@ -118,7 +118,7 @@ const Projects = () => {
       date: "Apr 2025",
       tags: ["RAG", "FAISS", "LLMs", "Privacy"],
       category: ["NLP", "ML"],
-      github: "#", // Placeholder
+      github: "https://github.com/JyotBuch/DocuSense-AI", // Placeholder
       demo: "#",
       image: null
     },
@@ -129,7 +129,7 @@ const Projects = () => {
       date: "Mar 2025",
       tags: ["Chatbot", "RAG", "Multimodal", "Agriculture"],
       category: ["NLP", "Web Development"],
-      github: "#", // Placeholder
+      github: "https://github.com/JyotBuch/AgroTalk", // Placeholder
       demo: "#",
       image: null
     },
@@ -140,7 +140,7 @@ const Projects = () => {
       date: "Apr–May 2025",
       tags: ["NLP", "Clustering", "Visualization", "HuggingFace"],
       category: ["NLP", "Data Science"],
-      github: "#", // Placeholder
+      github: "https://colab.research.google.com/drive/1-IsSH5b2m2ZeP32ywdXXFMvpj3ooNMfh?usp=sharing", // Placeholder
       demo: "#",
       image: null
     },
@@ -151,7 +151,7 @@ const Projects = () => {
       date: "Aug–Dec 2022",
       tags: ["YOLOv5", "OCR", "Computer Vision", "PyTorch"],
       category: ["Computer Vision", "ML"],
-      github: null, // Corporate IP
+      github: "https://www.linkedin.com/in/jyot-buch/details/experience/2017484150/multiple-media-viewer/?profileId=ACoAADHA9tsB-XKa7NV5k6sm6c87OoU5Dmq0u48&treasuryMediaId=1635506050563", // Corporate IP
       demo: null,
       image: null
     }
