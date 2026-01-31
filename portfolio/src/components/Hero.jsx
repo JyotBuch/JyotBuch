@@ -57,7 +57,7 @@ const Hero = () => {
             {/* CTA Buttons */}
             <div className="flex flex-wrap gap-4 pt-4">
               <a
-                href="/JyotBuch/documents/Data_Scientist (7).pdf"
+                href="/JyotBuch/documents/AI_Engineer.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-8 py-3 bg-primary-600 hover:bg-primary-700 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
