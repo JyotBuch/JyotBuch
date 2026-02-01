@@ -8,7 +8,7 @@ const Experience = () => {
     {
       title: "Research Assistant",
       company: "ScienceNLP Lab, University of Illinois Urbana-Champaign",
-      duration: "Jan 2026 – May 2026",
+      duration: "Jan 2026 – Present",
       location: "Champaign, IL",
       type: "Research",
       logo: "/JyotBuch/logos/uiuc.png",
