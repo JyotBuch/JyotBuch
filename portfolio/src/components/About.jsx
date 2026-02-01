@@ -51,8 +51,9 @@ const About = () => {
             >
               Currently, I&apos;m working as a <span className="font-semibold">Research Assistant</span> at 
               the ScienceNLP lab, developing knowledge graph integration and RAG-based QA systems for NIH-funded biomedical 
-              research, building transformer-based entity extraction pipelines, and engineering LLM-based reranking systems for 
-              multi-ontology entity disambiguation.
+              research. I also serve as <span className="font-semibold">Co-Founder and Vice President</span> of StatCom, 
+              a graduate student consulting organization I helped establish, where I manage over 50 students across 6 consulting 
+              projects with local businesses, schools, and nonprofits.
             </p>
 
             {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-8 animate-slide-up" style={{ animationDelay: '0.6s' }}>

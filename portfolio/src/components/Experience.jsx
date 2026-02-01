@@ -6,6 +6,20 @@ const Experience = () => {
   
   const experiences = [
     {
+      title: "Co-Founder & Vice President",
+      company: "StatCom (Statistics in Community)",
+      duration: "Aug 2024 – Present",
+      location: "Champaign, IL",
+      type: "Leadership",
+      logo: "/JyotBuch/logos/StatCom.png",
+      achievements: [
+        "Co-founded and lead a graduate student consulting organization providing data analytics and statistical consulting to local businesses, schools, and mid-sized nonprofits",
+        "Manage over 50 graduate students across 6 active consulting projects, overseeing project allocation, client relationships, and deliverable quality",
+        "Established organizational structure, recruitment processes, and client engagement frameworks to scale impact across the Champaign-Urbana community"
+      ],
+      tags: ["Leadership", "Consulting", "Data Analytics", "Project Management", "Team Management"]
+    },
+    {
       title: "Research Assistant",
       company: "ScienceNLP Lab, University of Illinois Urbana-Champaign",
       duration: "Jan 2026 – May 2026",
