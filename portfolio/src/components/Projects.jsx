@@ -101,6 +101,17 @@ const Projects = () => {
       image: null
     },
     {
+      title: "Interview.AI",
+      description: "Audio-first interview platform that generates questions with LLMs, speaks them via text-to-speech, and transcribes candidate responses in real time with speech-to-text.",
+      achievement: "End-to-end automated interview flow with in-memory audio processing",
+      date: "Feb 2026",
+      tags: ["LLMs", "Speech-to-Text", "Text-to-Speech", "Python", "Groq"],
+      category: ["NLP", "ML", "Web Development"],
+      github: "https://github.com/JyotBuch/Interview.AI",
+      demo: null,
+      image: null
+    },
+    {
       title: "Dribble.AI",
       description: "AI-powered video analysis for soccer using CNN-Transformer hybrid. Detects passes, shots, and transitions from SoccerNet dataset with temporal attention mechanisms.",
       achievement: "Achieved 0.713 mAP@0.75 score",
