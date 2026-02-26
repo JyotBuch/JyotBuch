@@ -90,6 +90,17 @@ const Projects = () => {
 
   const projects = [
     {
+      title: "VetoClub.AI (LetsPlanIt)",
+      description: "Conversation-context-aware group outing planner that lives inside iMessage. Built multi-stage reasoning architecture with context extraction layer, state resolver with validation, orchestrator decision engine, and token-optimized LLM pipeline.",
+      achievement: "Full agentic workflow with silent extraction + active orchestration",
+      date: "Feb 2026",
+      tags: ["LLMs", "Groq", "FastAPI", "Redis", "Multi-Agent", "iMessage"],
+      category: ["NLP", "ML", "Web Development"],
+      github: "https://github.com/JyotBuch/VetoClub.AI",
+      demo: null,
+      image: null
+    },
+    {
       title: "Terminal Agent",
       description: "AI-powered terminal assistant that automatically suggests fixes when commands fail. Captures errors, searches Stack Overflow using FAISS semantic search, and uses GPT-4 to generate contextual solutions.",
       achievement: "Intelligent error resolution with LLM-powered debugging",
