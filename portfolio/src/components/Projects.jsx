@@ -113,10 +113,10 @@ const Projects = () => {
     },
     {
       title: "Interview.AI",
-      description: "Audio-first interview platform that generates questions with LLMs, speaks them via text-to-speech, and transcribes candidate responses in real time with speech-to-text.",
-      achievement: "End-to-end automated interview flow with in-memory audio processing",
+      description: "AI-powered mock interview platform with three distinct modes: technical interview grounded in resume experience, behavioural interview with STAR-format coaching, and coding interview with live code execution sandbox. Delivers adaptive questions, real-time grading, and detailed post-session reports.",
+      achievement: "Multi-modal adaptive interviewing with live code execution",
       date: "Feb 2026",
-      tags: ["LLMs", "Speech-to-Text", "Text-to-Speech", "Python", "Groq"],
+      tags: ["LLMs", "OpenAI", "ElevenLabs", "Modal", "Speech-to-Text", "Python"],
       category: ["NLP", "ML", "Web Development"],
       github: "https://github.com/JyotBuch/Interview.AI",
       demo: null,
