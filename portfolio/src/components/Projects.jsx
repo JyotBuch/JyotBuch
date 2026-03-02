@@ -3,6 +3,7 @@ import useScrollAnimation from '../hooks/useScrollAnimation';
 
 const ProjectCard = ({ project, index }) => {
   const [cardRef, cardVisible] = useScrollAnimation({ threshold: 0.1 });
+  const isLinkedInLink = project.github?.includes('linkedin.com');
   
   return (
     <div
@@ -59,10 +60,16 @@ const ProjectCard = ({ project, index }) => {
               rel="noopener noreferrer"
               className="flex-1 px-4 py-2 bg-gray-900 dark:bg-gray-700 text-white rounded-lg hover:bg-gray-800 dark:hover:bg-gray-600 transition-colors text-center text-sm font-medium"
             >
-              <svg className="w-4 h-4 inline-block mr-1" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z" clipRule="evenodd" />
-              </svg>
-              GitHub
+              {isLinkedInLink ? (
+                <svg className="w-4 h-4 inline-block mr-1" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M4.98 3.5A2.5 2.5 0 117.5 6a2.5 2.5 0 01-2.52-2.5zM3 8.5h4v12H3zM9.5 8.5h3.8v1.7h.1c.5-1 1.9-2 3.9-2 4.1 0 4.8 2.7 4.8 6.1v6.2h-4v-5.5c0-1.3 0-3-1.9-3s-2.2 1.5-2.2 2.9v5.6h-4z" />
+                </svg>
+              ) : (
+                <svg className="w-4 h-4 inline-block mr-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z" clipRule="evenodd" />
+                </svg>
+              )}
+              Check it out
             </a>
           )}
           {project.demo && (
@@ -140,7 +147,7 @@ const Projects = () => {
       date: "Summer 2025",
       tags: ["AWS Bedrock", "NLP", "Entity Extraction", "Serverless"],
       category: ["NLP", "Cloud"],
-      github: "https://www.wsj.com/articles/amazon-leans-into-generative-ai-to-manage-its-finances-c77b16eb?gaa_at=eafs&gaa_n=AWEtsqfdACwAo03ZxXsqO53vxgdQIppilJgQH3xVep4jwoPeFDAsg3dugJTv&gaa_ts=697d790d&gaa_sig=1GzyvW_zlAlkVLm1QGJMlYP7ZF3fo_k1OHZ5mnoc5LCSWIil1al3MNxSAJB6_ODfHLoQIpeqgseCUinWofXiOw%3D%3D", // Corporate project
+      github: "https://www.linkedin.com/in/jyot-buch/", // Experience project
       demo: null,
       image: null
     },
@@ -184,7 +191,7 @@ const Projects = () => {
       date: "Aug–Dec 2022",
       tags: ["YOLOv5", "OCR", "Computer Vision", "PyTorch"],
       category: ["Computer Vision", "ML"],
-      github: "https://www.linkedin.com/in/jyot-buch/details/experience/2017484150/multiple-media-viewer/?profileId=ACoAADHA9tsB-XKa7NV5k6sm6c87OoU5Dmq0u48&treasuryMediaId=1635506050563", // Corporate IP
+      github: "https://www.linkedin.com/in/jyot-buch/", // Experience project
       demo: null,
       image: null
     }
