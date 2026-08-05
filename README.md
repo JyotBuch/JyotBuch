@@ -1,14 +1,13 @@
 # Hi, I'm Jyot Buch 👋
 
-MSc Statistics student at the University of Illinois Urbana-Champaign, focused on building practical AI systems across NLP, LLM applications, and applied data science.
+Masters in Statistics student graduated recently from University of Illinois Urbana-Champaign, with a focus on building practical AI systems across NLP, LLM applications, and applied data science.
 
 I enjoy turning research ideas into real products—especially systems that combine reasoning, retrieval, and strong user experience.
 
 ## What I’m Working On
 
 - Research Assistant at **ScienceNLP Lab (UIUC)**, building knowledge graph + RAG systems for biomedical research.
-- Co-Founder & Vice President of **StatCom**, leading graduate student consulting teams on analytics projects for schools, local businesses, and nonprofits.
-- Building AI-first products in interview intelligence, developer tooling, and conversational agents.
+- Building AI-first products in document intelligence, developer tooling, and conversational agents.
 
 ## Core Interests
 
@@ -53,9 +52,9 @@ AI-powered terminal assistant that captures failed command errors, searches rela
 
 ## Experience Highlights
 
-- **ScienceNLP Lab, UIUC** — Research Assistant (Jan 2026–Present)
-- **StatCom** — Co-Founder & Vice President (Aug 2025–Present)
-- **UIUC Gies College of Business** — Teaching Assistant (Aug 2025–Dec 2025)
+- **ScienceNLP Lab, UIUC** — Research Assistant
+- **StatCom** — Co-Founder & Vice President
+- **UIUC Gies College of Business** — Teaching Assistant
 - **Amazon** — Data Science Intern
 - **Eaton** — Data Science Intern
 - **Accelirate Softech** — Automation Developer
