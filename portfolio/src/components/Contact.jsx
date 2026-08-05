@@ -149,7 +149,7 @@ const Contact = () => {
           {/* Call to Action */}
           <div className="mt-12 text-center animate-slide-up">
             <p className="text-gray-700 dark:text-gray-300 mb-6 text-lg">
-              Looking for a data scientist or ML engineer? Let&apos;s talk!
+              Looking for a data scientist or AI engineer? Let&apos;s talk!
             </p>
             <a
               href="mailto:jyotb2@illinois.edu"

@@ -1,0 +1,44 @@
+[
+  {
+    "id": "wecu-scholar",
+    "title": "WeCU Scholar",
+    "organization": "UIUC",
+    "date": "Apr 2025",
+    "description": "Recognized for community childcare analysis support"
+  },
+  {
+    "id": "ip-recognition-eaton",
+    "title": "Intellectual Property Recognition",
+    "organization": "Eaton",
+    "date": "Oct 2022",
+    "description": "Trade secret development for Drawing-to-Data (D2D) tool"
+  },
+  {
+    "id": "ci-global-aerospace-winner",
+    "title": "CI Global Aerospace Level Project Winner",
+    "organization": "Eaton",
+    "date": "2022",
+    "description": "Awarded for innovative project contributions"
+  },
+  {
+    "id": "alucast-delegate",
+    "title": "ALUCAST Delegate",
+    "organization": "ALUCAST Conference",
+    "date": "Dec 2021",
+    "description": "Presented on AI/ML trends in die casting industry"
+  },
+  {
+    "id": "sports-captain",
+    "title": "Sports Captain",
+    "organization": "Lexicon International Schools",
+    "date": "Aug 2017",
+    "description": "Leadership in school athletics program"
+  },
+  {
+    "id": "athletic-achievements",
+    "title": "Athletic Achievements",
+    "organization": "The Bishop's Co-Ed School",
+    "date": "Apr 2017",
+    "description": "Medals in 100m sprint, long jump, and relay events"
+  }
+]

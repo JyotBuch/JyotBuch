@@ -1,0 +1,37 @@
+[
+  {
+    "id": "programming-languages",
+    "title": "Programming Languages",
+    "icon": "code",
+    "skills": ["Python", "R", "SQL", "C++", "Java", "JavaScript", "HTML", "CSS", "HiveQL"],
+    "color": "primary"
+  },
+  {
+    "id": "ml-ai",
+    "title": "Machine Learning & AI",
+    "icon": "brain",
+    "skills": ["PyTorch", "Transformers", "LLMs", "RAG Systems", "YOLO", "Tesseract OCR", "Computer Vision", "NLP", "Deep Learning", "Supervised/Unsupervised Learning"],
+    "color": "accent"
+  },
+  {
+    "id": "tools-technologies",
+    "title": "Tools & Technologies",
+    "icon": "gear",
+    "skills": ["Power BI", "Streamlit", "Tableau", "Apache Hadoop", "OpenCV", "UiPath", "Git", "Docker"],
+    "color": "primary"
+  },
+  {
+    "id": "cloud-databases",
+    "title": "Cloud & Databases",
+    "icon": "cloud",
+    "skills": ["AWS Bedrock", "AWS S3", "AWS Lambda", "LocalStack", "Neo4j", "PostgreSQL", "MySQL", "Oracle"],
+    "color": "accent"
+  },
+  {
+    "id": "specializations",
+    "title": "Specializations",
+    "icon": "star",
+    "skills": ["Knowledge Graphs", "Information Retrieval", "Robotic Process Automation", "Prompt Engineering", "Data Visualization", "Predictive Modeling"],
+    "color": "primary"
+  }
+]

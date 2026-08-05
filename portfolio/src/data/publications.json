@@ -1,0 +1,22 @@
+[
+  {
+    "id": "water-potability-ml",
+    "title": "Drinking water potability prediction using machine learning approaches: a case study of Indian rivers",
+    "journal": "Water Practice & Technology",
+    "date": "Dec 2023",
+    "authors": "Jyot Buch et al.",
+    "link": "https://doi.org/10.2166/wpt.2023.202",
+    "abstract": "Research on predicting water potability using ML techniques for Indian rivers.",
+    "type": "Journal Article"
+  },
+  {
+    "id": "ml-ai-die-casting",
+    "title": "Applications of Machine Learning and Artificial Intelligence in Metal Die Casting",
+    "conference": "ALUCAST, India",
+    "date": "Jan 2022",
+    "authors": "Jyot Buch",
+    "link": null,
+    "abstract": "Presented research on AI/ML applications in manufacturing processes.",
+    "type": "Conference Paper"
+  }
+]

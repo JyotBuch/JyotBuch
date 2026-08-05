@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import useScrollAnimation from '../hooks/useScrollAnimation';
+import projectsData from '../data/projects.json';
 
 const ProjectCard = ({ project, index }) => {
   const [cardRef, cardVisible] = useScrollAnimation({ threshold: 0.1 });
@@ -32,7 +33,7 @@ const ProjectCard = ({ project, index }) => {
         </div>
 
         <p className="text-gray-700 dark:text-gray-300 mb-3 flex-1">
-          {project.description}
+          {(project.description || '').trim() || 'Project details coming soon.'}
         </p>
 
         <div className="bg-accent-50 dark:bg-accent-900/20 border-l-4 border-accent-500 px-4 py-2 mb-4">
@@ -95,107 +96,7 @@ const Projects = () => {
   const [titleRef, titleVisible] = useScrollAnimation({ threshold: 0.2 });
   const [activeFilter, setActiveFilter] = useState('All');
 
-  const projects = [
-    {
-      title: "VetoClub.AI (LetsPlanIt)",
-      description: "Conversation-context-aware group outing planner that lives inside iMessage. Built multi-stage reasoning architecture with context extraction layer, state resolver with validation, orchestrator decision engine, and token-optimized LLM pipeline.",
-      achievement: "Full agentic workflow with silent extraction + active orchestration",
-      date: "Feb 2026",
-      tags: ["LLMs", "Groq", "FastAPI", "Redis", "Multi-Agent", "iMessage"],
-      category: ["NLP", "ML", "Web Development"],
-      github: "https://github.com/JyotBuch/VetoClub.AI",
-      demo: null,
-      image: null
-    },
-    {
-      title: "Terminal Agent",
-      description: "AI-powered terminal assistant that automatically suggests fixes when commands fail. Captures errors, searches Stack Overflow using FAISS semantic search, and uses GPT-4 to generate contextual solutions.",
-      achievement: "Intelligent error resolution with LLM-powered debugging",
-      date: "Jan 2026",
-      tags: ["LLMs", "GPT-4", "FAISS", "LangChain", "Flask"],
-      category: ["NLP", "ML", "Web Development"],
-      github: "https://github.com/JyotBuch/terminal-agent",
-      demo: null,
-      image: null
-    },
-    {
-      title: "Interview.AI",
-      description: "AI-powered mock interview platform with three distinct modes: technical interview grounded in resume experience, behavioural interview with STAR-format coaching, and coding interview with live code execution sandbox. Delivers adaptive questions, real-time grading, and detailed post-session reports.",
-      achievement: "Multi-modal adaptive interviewing with live code execution",
-      date: "Feb 2026",
-      tags: ["LLMs", "OpenAI", "ElevenLabs", "Modal", "Speech-to-Text", "Python"],
-      category: ["NLP", "ML", "Web Development"],
-      github: "https://github.com/JyotBuch/Interview.AI",
-      demo: null,
-      image: null
-    },
-    {
-      title: "Dribble.AI",
-      description: "AI-powered video analysis for soccer using CNN-Transformer hybrid. Detects passes, shots, and transitions from SoccerNet dataset with temporal attention mechanisms.",
-      achievement: "Achieved 0.713 mAP@0.75 score",
-      date: "Apr–May 2025",
-      tags: ["Computer Vision", "Deep Learning", "PyTorch", "Transformers"],
-      category: ["Computer Vision", "Deep Learning"],
-      github: "https://github.com/JyotBuch/DribbleAI", // Placeholder
-      demo: null,
-      image: null // Placeholder
-    },
-    {
-      title: "FinLens",
-      description: "Document-agnostic entity extraction pipeline using AWS Bedrock for diverse financial documents. Production-level accuracy with serverless architecture.",
-      achievement: ">95% accuracy on financial documents",
-      date: "Summer 2025",
-      tags: ["AWS Bedrock", "NLP", "Entity Extraction", "Serverless"],
-      category: ["NLP", "Cloud"],
-      github: "https://www.linkedin.com/in/jyot-buch/", // Experience project
-      demo: null,
-      image: null
-    },
-    {
-      title: "DocuSense.AI",
-      description: "Local RAG platform using FAISS and local LLMs to answer questions about uploaded documents like offer letters and lease agreements.",
-      achievement: "Privacy-first local document intelligence",
-      date: "Apr 2025",
-      tags: ["RAG", "FAISS", "LLMs", "Privacy"],
-      category: ["NLP", "ML"],
-      github: "https://github.com/JyotBuch/DocuSense-AI", // Placeholder
-      demo: "#",
-      image: null
-    },
-    {
-      title: "AgroTalk",
-      description: "Multimodal chatbot for farmers integrating weather APIs, soil data, and crop calendars. Provides field-specific advice using RAG+LLM architecture.",
-      achievement: "Empowering farmers with AI-driven insights",
-      date: "Mar 2025",
-      tags: ["Chatbot", "RAG", "Multimodal", "Agriculture"],
-      category: ["NLP", "Web Development"],
-      github: "https://github.com/JyotBuch/AgroTalk", // Placeholder
-      demo: "#",
-      image: null
-    },
-    {
-      title: "Semantic Clustering for Model Cards",
-      description: "Organized HuggingFace model cards using NLP and clustering techniques. Created interactive semantic maps for model discovery.",
-      achievement: "Enhanced model discoverability",
-      date: "Apr–May 2025",
-      tags: ["NLP", "Clustering", "Visualization", "HuggingFace"],
-      category: ["NLP", "Data Science"],
-      github: "https://colab.research.google.com/drive/1-IsSH5b2m2ZeP32ywdXXFMvpj3ooNMfh?usp=sharing", // Placeholder
-      demo: "#",
-      image: null
-    },
-    {
-      title: "Drawing-to-Data (D2D)",
-      description: "YOLOv5-based tool with Tesseract OCR for automated extraction from engineering drawings. Streamlined compliance mapping workflow.",
-      achievement: "91% detection, 93% OCR precision | IP Award",
-      date: "Aug–Dec 2022",
-      tags: ["YOLOv5", "OCR", "Computer Vision", "PyTorch"],
-      category: ["Computer Vision", "ML"],
-      github: "https://www.linkedin.com/in/jyot-buch/", // Experience project
-      demo: null,
-      image: null
-    }
-  ];
+  const projects = projectsData;
 
   const categories = ['All', 'Computer Vision', 'NLP', 'Deep Learning', 'ML', 'Data Science', 'Web Development', 'Cloud'];
 
@@ -236,7 +137,7 @@ const Projects = () => {
         {/* Projects grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredProjects.map((project, index) => (
-            <ProjectCard key={index} project={project} index={index} />
+            <ProjectCard key={project.id} project={project} index={index} />
           ))}
         </div>
 

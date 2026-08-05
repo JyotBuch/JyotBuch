@@ -1,0 +1,12 @@
+[
+  { "id": "uipath-rpa", "name": "UiPath Robotic Process Automation", "issuer": "UiPath", "date": "Dec 2023" },
+  { "id": "deep-learning-a-z", "name": "Deep Learning A-Z: Hands-On Artificial Neural Networks", "issuer": "Udemy", "date": "Feb 2022" },
+  { "id": "tableau-2020-a-z", "name": "Tableau 2020 A-Z", "issuer": "Udemy", "date": "Feb 2022" },
+  { "id": "power-bi-a-z", "name": "Power BI A-Z", "issuer": "Udemy", "date": "Jan 2022" },
+  { "id": "python-kaggle", "name": "Python", "issuer": "Kaggle", "date": "Apr 2021" },
+  { "id": "sql-basics-hackerrank", "name": "SQL (Basics)", "issuer": "HackerRank", "date": "Apr 2021" },
+  { "id": "java-gold-hackerrank", "name": "Java Gold Badge", "issuer": "HackerRank", "date": "Dec 2020" },
+  { "id": "streamlit-python-ml-webapp", "name": "Streamlit & Python ML Web App", "issuer": "Coursera", "date": "Sep 2020" },
+  { "id": "ml-data-analysis-coursera", "name": "Machine Learning for Data Analysis", "issuer": "Coursera", "date": "Jul 2020" },
+  { "id": "data-science-2022-udemy", "name": "Data Science 2022: Complete Data Science & ML", "issuer": "Udemy", "date": "Nov 2019" }
+]

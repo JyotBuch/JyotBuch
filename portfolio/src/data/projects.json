@@ -1,0 +1,216 @@
+[
+  {
+    "id": "vetoclub-ai",
+    "title": "VetoClub.AI (LetsPlanIt)",
+    "description": "Conversation-context-aware group outing planner that lives inside iMessage. Built multi-stage reasoning architecture with context extraction layer, state resolver with validation, orchestrator decision engine, and token-optimized LLM pipeline.",
+    "achievement": "Full agentic workflow with silent extraction + active orchestration",
+    "date": "Feb 2026",
+    "tags": [
+      "LLMs",
+      "Groq",
+      "FastAPI",
+      "Redis",
+      "Multi-Agent",
+      "iMessage"
+    ],
+    "category": [
+      "NLP",
+      "ML",
+      "Web Development"
+    ],
+    "github": "https://github.com/JyotBuch/VetoClub.AI",
+    "demo": null,
+    "image": null
+  },
+  {
+    "id": "terminal-agent",
+    "title": "Terminal Agent",
+    "description": "AI-powered terminal assistant that automatically suggests fixes when commands fail. Captures errors, searches Stack Overflow using FAISS semantic search, and uses GPT-4 to generate contextual solutions.",
+    "achievement": "Intelligent error resolution with LLM-powered debugging",
+    "date": "Jan 2026",
+    "tags": [
+      "LLMs",
+      "GPT-4",
+      "FAISS",
+      "LangChain",
+      "Flask"
+    ],
+    "category": [
+      "NLP",
+      "ML",
+      "Web Development"
+    ],
+    "github": "https://github.com/JyotBuch/terminal-agent",
+    "demo": null,
+    "image": null
+  },
+  {
+    "id": "interview-ai",
+    "title": "Interview.AI",
+    "description": "AI interviewer that runs adaptive technical rounds with voice + text input, live coding prompts, and dynamic follow-up questions based on candidate responses.",
+    "achievement": "Multi-modal adaptive interviewing with live code execution",
+    "date": "Feb 2026",
+    "tags": [
+      "LLMs",
+      "OpenAI",
+      "ElevenLabs",
+      "Modal",
+      "Speech-to-Text",
+      "Python"
+    ],
+    "category": [
+      "NLP",
+      "ML",
+      "Web Development"
+    ],
+    "github": "https://github.com/JyotBuch/Interview.AI",
+    "demo": null,
+    "image": null
+  },
+  {
+    "id": "dribble-ai",
+    "title": "Dribble.AI",
+    "description": "AI-powered video analysis for soccer using CNN-Transformer hybrid. Detects passes, shots, and transitions from SoccerNet dataset with temporal attention mechanisms.",
+    "achievement": "Achieved 0.713 mAP@0.75 score",
+    "date": "Apr–May 2025",
+    "tags": [
+      "Computer Vision",
+      "Deep Learning",
+      "PyTorch",
+      "Transformers"
+    ],
+    "category": [
+      "Computer Vision",
+      "Deep Learning"
+    ],
+    "github": "https://github.com/JyotBuch/DribbleAI",
+    "demo": null,
+    "image": null
+  },
+  {
+    "id": "finlens",
+    "title": "FinLens",
+    "description": "Document-agnostic entity extraction pipeline using AWS Bedrock for diverse financial documents. Production-level accuracy with serverless architecture.",
+    "achievement": ">95% accuracy on financial documents",
+    "date": "Summer 2025",
+    "tags": [
+      "AWS Bedrock",
+      "NLP",
+      "Entity Extraction",
+      "Serverless"
+    ],
+    "category": [
+      "NLP",
+      "Cloud"
+    ],
+    "github": "https://www.linkedin.com/in/jyot-buch/",
+    "demo": null,
+    "image": null
+  },
+  {
+    "id": "docusense-ai",
+    "title": "DocuSense.AI",
+    "description": "Local RAG platform using FAISS and local LLMs to answer questions about uploaded documents like offer letters and lease agreements.",
+    "achievement": "Privacy-first local document intelligence",
+    "date": "Apr 2025",
+    "tags": [
+      "RAG",
+      "FAISS",
+      "LLMs",
+      "Privacy"
+    ],
+    "category": [
+      "NLP",
+      "ML"
+    ],
+    "github": "https://github.com/JyotBuch/DocuSense-AI",
+    "demo": "#",
+    "image": null
+  },
+  {
+    "id": "agrotalk",
+    "title": "AgroTalk",
+    "description": "Multimodal chatbot for farmers integrating weather APIs, soil data, and crop calendars. Provides field-specific advice using RAG+LLM architecture.",
+    "achievement": "Empowering farmers with AI-driven insights",
+    "date": "Mar 2025",
+    "tags": [
+      "Chatbot",
+      "RAG",
+      "Multimodal",
+      "Agriculture"
+    ],
+    "category": [
+      "NLP",
+      "Web Development"
+    ],
+    "github": "https://github.com/JyotBuch/AgroTalk",
+    "demo": "#",
+    "image": null
+  },
+  {
+    "id": "semantic-clustering-model-cards",
+    "title": "Semantic Clustering for Model Cards",
+    "description": "Organized HuggingFace model cards using NLP and clustering techniques. Created interactive semantic maps for model discovery.",
+    "achievement": "Enhanced model discoverability",
+    "date": "Apr–May 2025",
+    "tags": [
+      "NLP",
+      "Clustering",
+      "Visualization",
+      "HuggingFace"
+    ],
+    "category": [
+      "NLP",
+      "Data Science"
+    ],
+    "github": "https://colab.research.google.com/drive/1-IsSH5b2m2ZeP32ywdXXFMvpj3ooNMfh?usp=sharing",
+    "demo": "#",
+    "image": null
+  },
+  {
+    "id": "drawing-to-data",
+    "title": "Drawing-to-Data (D2D)",
+    "description": "YOLOv5-based tool with Tesseract OCR for automated extraction from engineering drawings. Streamlined compliance mapping workflow.",
+    "achievement": "91% detection, 93% OCR precision | IP Award",
+    "date": "Aug–Dec 2022",
+    "tags": [
+      "YOLOv5",
+      "OCR",
+      "Computer Vision",
+      "PyTorch"
+    ],
+    "category": [
+      "Computer Vision",
+      "ML"
+    ],
+    "github": "https://www.linkedin.com/in/jyot-buch/",
+    "demo": null,
+    "image": null
+  },
+  {
+    "id": "revisit",
+    "title": "Revisit",
+    "description": "A personal capture-and-research pipeline. A browser extension lets you save passages, images, and video links throughout the day with a research or casual flag. A daily batch job clusters related captures using embedding similarity, runs agentic resource-gathering and validation for research-flagged clusters, and files everything into a queryable backlog — reducing the cost of returning to topics you didn't have time for in the moment.",
+    "achievement": "Agentic research loop with LLM-as-judge evaluation and full Langfuse observability",
+    "date": "Aug 2026",
+    "tags": [
+      "Python",
+      "FastAPI",
+      "LangChain",
+      "Groq",
+      "Langfuse",
+      "Chrome Extension",
+      "LLM Agents",
+      "Embeddings",
+      "Postgres"
+    ],
+    "category": [
+      "AI",
+      "NLP",
+      "Productivity"
+    ],
+    "github": null,
+    "demo": null,
+    "image": null
+  }
+]

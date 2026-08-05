@@ -1,4 +1,7 @@
 import useScrollAnimation from '../hooks/useScrollAnimation';
+import publicationsData from '../data/publications.json';
+import certificationsData from '../data/certifications.json';
+import honorsData from '../data/honors.json';
 
 const PublicationCard = ({ pub, index }) => {
   const [cardRef, cardVisible] = useScrollAnimation({ threshold: 0.1 });
@@ -68,78 +71,9 @@ const Publications = () => {
   const [certTitleRef, certTitleVisible] = useScrollAnimation({ threshold: 0.2 });
   const [honorsTitleRef, honorsTitleVisible] = useScrollAnimation({ threshold: 0.2 });
   
-  const publications = [
-    {
-      title: "Drinking water potability prediction using machine learning approaches: a case study of Indian rivers",
-      journal: "Water Practice & Technology",
-      date: "Dec 2023",
-      authors: "Jyot Buch et al.",
-      link: "https://doi.org/10.2166/wpt.2023.202", // Placeholder - Update with actual DOI or link
-      abstract: "Research on predicting water potability using ML techniques for Indian rivers.",
-      type: "Journal Article"
-    },
-    {
-      title: "Applications of Machine Learning and Artificial Intelligence in Metal Die Casting",
-      conference: "ALUCAST, India",
-      date: "Jan 2022",
-      authors: "Jyot Buch",
-      // link: "#", // Placeholder
-      abstract: "Presented research on AI/ML applications in manufacturing processes.",
-      type: "Conference Paper"
-    }
-  ];
-
-  const certifications = [
-    { name: "UiPath Robotic Process Automation", issuer: "UiPath", date: "Dec 2023" },
-    { name: "Deep Learning A-Z: Hands-On Artificial Neural Networks", issuer: "Udemy", date: "Feb 2022" },
-    { name: "Tableau 2020 A-Z", issuer: "Udemy", date: "Feb 2022" },
-    { name: "Power BI A-Z", issuer: "Udemy", date: "Jan 2022" },
-    { name: "Python", issuer: "Kaggle", date: "Apr 2021" },
-    { name: "SQL (Basics)", issuer: "HackerRank", date: "Apr 2021" },
-    { name: "Java Gold Badge", issuer: "HackerRank", date: "Dec 2020" },
-    { name: "Streamlit & Python ML Web App", issuer: "Coursera", date: "Sep 2020" },
-    { name: "Machine Learning for Data Analysis", issuer: "Coursera", date: "Jul 2020" },
-    { name: "Data Science 2022: Complete Data Science & ML", issuer: "Udemy", date: "Nov 2019" }
-  ];
-
-  const honors = [
-    {
-      title: "WeCU Scholar",
-      organization: "UIUC",
-      date: "Apr 2025",
-      description: "Recognized for community childcare analysis support"
-    },
-    {
-      title: "Intellectual Property Recognition",
-      organization: "Eaton",
-      date: "Oct 2022",
-      description: "Trade secret development for Drawing-to-Data (D2D) tool"
-    },
-    {
-      title: "CI Global Aerospace Level Project Winner",
-      organization: "Eaton",
-      date: "2022",
-      description: "Awarded for innovative project contributions"
-    },
-    {
-      title: "ALUCAST Delegate",
-      organization: "ALUCAST Conference",
-      date: "Dec 2021",
-      description: "Presented on AI/ML trends in die casting industry"
-    },
-    {
-      title: "Sports Captain",
-      organization: "Lexicon International Schools",
-      date: "Aug 2017",
-      description: "Leadership in school athletics program"
-    },
-    {
-      title: "Athletic Achievements",
-      organization: "The Bishop's Co-Ed School",
-      date: "Apr 2017",
-      description: "Medals in 100m sprint, long jump, and relay events"
-    }
-  ];
+  const publications = publicationsData;
+  const certifications = certificationsData;
+  const honors = honorsData;
 
   return (
     <section id="publications" className="py-20 bg-gray-50 dark:bg-gray-800">
@@ -158,7 +92,7 @@ const Publications = () => {
 
           <div className="space-y-6">
             {publications.map((pub, index) => (
-              <PublicationCard key={index} pub={pub} index={index} />
+              <PublicationCard key={pub.id} pub={pub} index={index} />
             ))}
           </div>
         </div>
@@ -178,7 +112,7 @@ const Publications = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {certifications.map((cert, index) => (
               <div
-                key={index}
+                key={cert.id}
                 className="bg-white dark:bg-gray-900 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 p-5 border-l-4 border-accent-500 animate-fade-in"
                 style={{ animationDelay: `${index * 0.05}s` }}
               >
@@ -217,7 +151,7 @@ const Publications = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {honors.map((honor, index) => (
               <div
-                key={index}
+                key={honor.id}
                 className="bg-gradient-to-br from-white to-primary-50 dark:from-gray-900 dark:to-primary-900/10 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 p-6 animate-slide-up"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
