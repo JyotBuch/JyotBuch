@@ -212,5 +212,26 @@
     "github": null,
     "demo": null,
     "image": null
+  },
+  {
+    "id": "kaggriculture-agent",
+    "title": "Kaggriculture Agent",
+    "description": "A rule-based agent for the Kaggle \"Kaggriculture\" farming-simulation environment, plus a local match runner and replay viewer. The agent plants, waters, and harvests a dedicated carrot plot and sells the crop, using the official Kaggle visualizer (HTML/notebook) for playback of saved replays.",
+    "achievement": "",
+    "date": "Aug 2026",
+    "tags": [
+      "Python",
+      "Kaggle",
+      "Reinforcement Learning",
+      "Simulation",
+      "kaggle-environments"
+    ],
+    "category": [
+      "ML",
+      "Simulation"
+    ],
+    "github": "https://github.com/JyotBuch/kaggriculture",
+    "demo": null,
+    "image": null
   }
 ]
