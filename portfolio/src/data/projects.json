@@ -1,5 +1,31 @@
 [
   {
+    "id": "revisit",
+    "title": "Revisit",
+    "description": "A capture-and-research pipeline that turns scattered browsing into a queryable knowledge backlog. A Chrome extension lets you save passages, images, and video links on the fly with a research or casual flag; a daily batch job embeds and clusters related captures, then runs an agentic resource-gathering and validation pipeline on research-flagged clusters so nothing you didn't have time for in the moment gets lost.",
+    "achievement": "Agentic research loop with LLM-as-judge evaluation and full Langfuse observability",
+    "date": "Aug 2026",
+    "tags": [
+      "Python",
+      "FastAPI",
+      "LangChain",
+      "Groq",
+      "Langfuse",
+      "Chrome Extension",
+      "LLM Agents",
+      "Embeddings",
+      "Postgres"
+    ],
+    "category": [
+      "AI",
+      "NLP",
+      "Productivity"
+    ],
+    "github": "https://github.com/JyotBuch/Revisit",
+    "demo": null,
+    "image": null
+  },
+  {
     "id": "vetoclub-ai",
     "title": "VetoClub.AI (LetsPlanIt)",
     "description": "Conversation-context-aware group outing planner that lives inside iMessage. Built multi-stage reasoning architecture with context extraction layer, state resolver with validation, orchestrator decision engine, and token-optimized LLM pipeline.",
@@ -188,32 +214,6 @@
     "image": null
   },
   {
-    "id": "revisit",
-    "title": "Revisit",
-    "description": "A personal capture-and-research pipeline. A browser extension lets you save passages, images, and video links throughout the day with a research or casual flag. A daily batch job clusters related captures using embedding similarity, runs agentic resource-gathering and validation for research-flagged clusters, and files everything into a queryable backlog — reducing the cost of returning to topics you didn't have time for in the moment.",
-    "achievement": "Agentic research loop with LLM-as-judge evaluation and full Langfuse observability",
-    "date": "Aug 2026",
-    "tags": [
-      "Python",
-      "FastAPI",
-      "LangChain",
-      "Groq",
-      "Langfuse",
-      "Chrome Extension",
-      "LLM Agents",
-      "Embeddings",
-      "Postgres"
-    ],
-    "category": [
-      "AI",
-      "NLP",
-      "Productivity"
-    ],
-    "github": null,
-    "demo": null,
-    "image": null
-  },
-  {
     "id": "kaggriculture-agent",
     "title": "Kaggriculture Agent",
     "description": "A rule-based agent for the Kaggle \"Kaggriculture\" farming-simulation environment, plus a local match runner and replay viewer. The agent plants, waters, and harvests a dedicated carrot plot and sells the crop, using the official Kaggle visualizer (HTML/notebook) for playback of saved replays.",
@@ -232,6 +232,7 @@
     ],
     "github": "https://github.com/JyotBuch/kaggriculture",
     "demo": null,
-    "image": null
+    "image": null,
+    "hidden": true
   }
 ]

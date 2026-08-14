@@ -96,7 +96,7 @@ const Projects = () => {
   const [titleRef, titleVisible] = useScrollAnimation({ threshold: 0.2 });
   const [activeFilter, setActiveFilter] = useState('All');
 
-  const projects = projectsData;
+  const projects = projectsData.filter(project => !project.hidden);
 
   const categories = ['All', 'Computer Vision', 'NLP', 'Deep Learning', 'ML', 'Data Science', 'Web Development', 'Cloud'];
 
