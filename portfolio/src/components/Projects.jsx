@@ -1,14 +1,20 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import useScrollAnimation from '../hooks/useScrollAnimation';
 import projectsData from '../data/projects.json';
 
-const ProjectCard = ({ project, index }) => {
+const ProjectCard = ({ project, index, onPreviewStart, onPreviewEnd }) => {
   const [cardRef, cardVisible] = useScrollAnimation({ threshold: 0.1 });
   const isLinkedInLink = project.github?.includes('linkedin.com');
   
   return (
     <div
       ref={cardRef}
+      onMouseEnter={() => onPreviewStart(project)}
+      onMouseLeave={onPreviewEnd}
+      onFocus={() => onPreviewStart(project)}
+      onBlur={(event) => {
+        if (!event.currentTarget.contains(event.relatedTarget)) onPreviewEnd();
+      }}
       className={`bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-200 dark:border-gray-700 flex flex-col animate-on-scroll-scale ${cardVisible ? 'is-visible' : ''}`}
       style={{ transitionDelay: `${(index % 3) * 0.1}s` }}
     >
@@ -92,9 +98,48 @@ const ProjectCard = ({ project, index }) => {
   );
 };
 
+const ProjectVideoPreview = ({ project }) => {
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    if (!project || !videoRef.current) return;
+
+    videoRef.current.currentTime = 0;
+    videoRef.current.play().catch(() => {
+      // Some browsers can still decline autoplay despite the muted attribute.
+    });
+  }, [project]);
+
+  if (!project?.video) return null;
+
+  return (
+    <div
+      className="project-video-preview"
+      role="status"
+      aria-live="polite"
+      aria-label={`Video preview for ${project.title}`}
+    >
+      <video
+        ref={videoRef}
+        key={project.video}
+        src={project.video}
+        poster={project.image || undefined}
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="metadata"
+        className="project-video-preview__media"
+      />
+      <div className="project-video-preview__label">{project.title}</div>
+    </div>
+  );
+};
+
 const Projects = () => {
   const [titleRef, titleVisible] = useScrollAnimation({ threshold: 0.2 });
   const [activeFilter, setActiveFilter] = useState('All');
+  const [previewProject, setPreviewProject] = useState(null);
 
   const projects = projectsData.filter(project => !project.hidden);
 
@@ -103,6 +148,10 @@ const Projects = () => {
   const filteredProjects = activeFilter === 'All'
     ? projects
     : projects.filter(project => project.category.includes(activeFilter));
+
+  const showPreview = (project) => {
+    if (project.video) setPreviewProject(project);
+  };
 
   return (
     <section id="projects" className="py-20 bg-gray-50 dark:bg-gray-800">
@@ -137,7 +186,13 @@ const Projects = () => {
         {/* Projects grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredProjects.map((project, index) => (
-            <ProjectCard key={project.id} project={project} index={index} />
+            <ProjectCard
+              key={project.id}
+              project={project}
+              index={index}
+              onPreviewStart={showPreview}
+              onPreviewEnd={() => setPreviewProject(null)}
+            />
           ))}
         </div>
 
@@ -147,6 +202,7 @@ const Projects = () => {
           </div>
         )}
       </div>
+      <ProjectVideoPreview project={previewProject} />
     </section>
   );
 };

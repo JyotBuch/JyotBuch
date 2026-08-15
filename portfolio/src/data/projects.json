@@ -23,7 +23,8 @@
     ],
     "github": "https://github.com/JyotBuch/Revisit",
     "demo": null,
-    "image": null
+    "image": null,
+    "video": "/assets/videos/revisit.mp4"
   },
   {
     "id": "vetoclub-ai",
@@ -171,7 +172,8 @@
     ],
     "github": "https://github.com/JyotBuch/AgroTalk",
     "demo": "#",
-    "image": null
+    "image": null,
+    "video": "/assets/videos/agrotalk.mp4"
   },
   {
     "id": "semantic-clustering-model-cards",
