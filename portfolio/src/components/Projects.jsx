@@ -100,6 +100,9 @@ const ProjectCard = ({ project, index, onPreviewStart, onPreviewEnd }) => {
 
 const ProjectVideoPreview = ({ project }) => {
   const videoRef = useRef(null);
+  const videoSrc = project?.video
+    ? `${import.meta.env.BASE_URL}${project.video.replace(/^\//, '')}`
+    : null;
 
   useEffect(() => {
     if (!project || !videoRef.current) return;
@@ -110,7 +113,7 @@ const ProjectVideoPreview = ({ project }) => {
     });
   }, [project]);
 
-  if (!project?.video) return null;
+  if (!videoSrc) return null;
 
   return (
     <div
@@ -121,8 +124,8 @@ const ProjectVideoPreview = ({ project }) => {
     >
       <video
         ref={videoRef}
-        key={project.video}
-        src={project.video}
+        key={videoSrc}
+        src={videoSrc}
         poster={project.image || undefined}
         autoPlay
         muted
