@@ -2,7 +2,7 @@
   {
     "id": "revisit",
     "title": "Revisit",
-    "description": "A capture-and-research pipeline that turns scattered browsing into a queryable knowledge backlog. A Chrome extension lets you save passages, images, and video links on the fly with a research or casual flag; a daily batch job embeds and clusters related captures, then runs an agentic resource-gathering and validation pipeline on research-flagged clusters so nothing you didn't have time for in the moment gets lost.",
+    "description": "Turns scattered browsing into a queryable research backlog. Save passages and links on the fly, and it clusters and researches the ones you flagged but didn't have time for.",
     "achievement": "Agentic research loop with LLM-as-judge evaluation and full Langfuse observability",
     "date": "Aug 2026",
     "tags": [
@@ -29,7 +29,7 @@
   {
     "id": "vetoclub-ai",
     "title": "VetoClub.AI (LetsPlanIt)",
-    "description": "Conversation-context-aware group outing planner that lives inside iMessage. Built multi-stage reasoning architecture with context extraction layer, state resolver with validation, orchestrator decision engine, and token-optimized LLM pipeline.",
+    "description": "Plans group outings right inside your iMessage group chat, no separate app needed. It picks up on dates and preferences as your friends text, then chimes in when the group needs a nudge.",
     "achievement": "Full agentic workflow with silent extraction + active orchestration",
     "date": "Feb 2026",
     "tags": [
@@ -52,7 +52,7 @@
   {
     "id": "terminal-agent",
     "title": "Terminal Agent",
-    "description": "AI-powered terminal assistant that automatically suggests fixes when commands fail. Captures errors, searches Stack Overflow using FAISS semantic search, and uses GPT-4 to generate contextual solutions.",
+    "description": "Fixes your terminal mistakes before you have to go Google them. The moment a command fails, it looks up what likely went wrong and hands you a fix on the spot.",
     "achievement": "Intelligent error resolution with LLM-powered debugging",
     "date": "Jan 2026",
     "tags": [
@@ -74,7 +74,7 @@
   {
     "id": "interview-ai",
     "title": "Interview.AI",
-    "description": "AI interviewer that runs adaptive technical rounds with voice + text input, live coding prompts, and dynamic follow-up questions based on candidate responses.",
+    "description": "Runs realistic mock technical interviews on demand. Talk or type your answers, solve live coding problems, and get follow-up questions that adapt to what you just said.",
     "achievement": "Multi-modal adaptive interviewing with live code execution",
     "date": "Feb 2026",
     "tags": [
@@ -97,7 +97,7 @@
   {
     "id": "dribble-ai",
     "title": "Dribble.AI",
-    "description": "AI-powered video analysis for soccer using CNN-Transformer hybrid. Detects passes, shots, and transitions from SoccerNet dataset with temporal attention mechanisms.",
+    "description": "Watches soccer match footage and automatically tags the passes, shots, and momentum shifts a coach would care about, turning raw video into a searchable breakdown of the game.",
     "achievement": "Achieved 0.713 mAP@0.75 score",
     "date": "Apr–May 2025",
     "tags": [
@@ -117,7 +117,7 @@
   {
     "id": "finlens",
     "title": "FinLens",
-    "description": "Document-agnostic entity extraction pipeline using AWS Bedrock for diverse financial documents. Production-level accuracy with serverless architecture.",
+    "description": "Pulls the key data out of financial documents automatically, no matter the format they come in, so teams stop retyping numbers from PDFs by hand.",
     "achievement": ">95% accuracy on financial documents",
     "date": "Summer 2025",
     "tags": [
@@ -137,7 +137,7 @@
   {
     "id": "docusense-ai",
     "title": "DocuSense.AI",
-    "description": "Local RAG platform using FAISS and local LLMs to answer questions about uploaded documents like offer letters and lease agreements.",
+    "description": "Lets you ask plain-English questions about your own documents, leases, offer letters, contracts, and get straight answers, all processed locally so nothing sensitive leaves your machine.",
     "achievement": "Privacy-first local document intelligence",
     "date": "Apr 2025",
     "tags": [
@@ -157,7 +157,7 @@
   {
     "id": "agrotalk",
     "title": "AgroTalk",
-    "description": "Multimodal chatbot for farmers integrating weather APIs, soil data, and crop calendars. Provides field-specific advice using RAG+LLM architecture.",
+    "description": "Gives farmers weather-, soil-, and season-aware advice through a simple chat interface, so field decisions are backed by current conditions instead of guesswork.",
     "achievement": "Empowering farmers with AI-driven insights",
     "date": "Mar 2025",
     "tags": [
@@ -178,7 +178,7 @@
   {
     "id": "semantic-clustering-model-cards",
     "title": "Semantic Clustering for Model Cards",
-    "description": "Organized HuggingFace model cards using NLP and clustering techniques. Created interactive semantic maps for model discovery.",
+    "description": "Turns HuggingFace's sprawling catalog of model cards into an interactive map, making it easy to browse and discover similar models instead of scrolling through search results.",
     "achievement": "Enhanced model discoverability",
     "date": "Apr–May 2025",
     "tags": [
@@ -198,7 +198,7 @@
   {
     "id": "drawing-to-data",
     "title": "Drawing-to-Data (D2D)",
-    "description": "YOLOv5-based tool with Tesseract OCR for automated extraction from engineering drawings. Streamlined compliance mapping workflow.",
+    "description": "Reads engineering drawings the way an inspector would, spotting the relevant regions and pulling out the text, to speed up compliance checks that used to be done by hand.",
     "achievement": "91% detection, 93% OCR precision | IP Award",
     "date": "Aug–Dec 2022",
     "tags": [
@@ -218,7 +218,7 @@
   {
     "id": "kaggriculture-agent",
     "title": "Kaggriculture Agent",
-    "description": "A rule-based agent for the Kaggle \"Kaggriculture\" farming-simulation environment, plus a local match runner and replay viewer. The agent plants, waters, and harvests a dedicated carrot plot and sells the crop, using the official Kaggle visualizer (HTML/notebook) for playback of saved replays.",
+    "description": "Plays Kaggle's farming-simulation game autonomously, planting, watering, harvesting, and selling a crop each round, with a local viewer to replay and review any match.",
     "achievement": "",
     "date": "Aug 2026",
     "tags": [
@@ -240,8 +240,8 @@
   {
     "id": "ta-buddy",
     "title": "TA Buddy",
-    "description": "Diagnostic tutoring app that traces a student's question back through an LLM-extracted concept-prerequisite graph to find the actual root-cause gap, rather than answering the surface question. Instructors paste in course material and approve the proposed concept map before it's student-facing; students get Socratic calibration checks that redirect to an earlier concept when needed, with every answer grounded and cited from real course chunks; a teacher dashboard surfaces which concepts are systemic root causes versus what students think they're struggling with.",
-    "achievement": "Full-stack LLM pipeline: graph extraction, pgvector retrieval, and a stateful Socratic diagnostic agent",
+    "description": "Helps stuck students by tracing the question back to the concept they're actually missing, not just answering what was asked. Shows teachers where students are really struggling.",
+    "achievement": "End-to-end diagnostic tutor, from concept mapping to grounded Socratic tutoring",
     "date": "Aug 2026",
     "tags": [
       "Python",
