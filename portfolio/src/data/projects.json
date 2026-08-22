@@ -266,7 +266,7 @@
   {
     "id": "enterprise-risk-appliance",
     "title": "Enterprise Risk Appliance",
-    "description": "Lets access-risk analysts ask plain-English questions about who can do what across an enterprise system, and get answers backed by exact evidence instead of a black-box guess. A deterministic rules engine — not the AI — decides whether a risk actually exists; the AI only investigates and explains, so every finding traces back to real authorization data. Ships as a self-contained, Docker-deployable appliance that runs entirely on infrastructure you control, with a swap-in path to real SAP data later.",
+    "description": "Lets access-risk analysts ask plain-English questions about who can do what across an enterprise system, and get answers backed by exact evidence, not a black-box guess.",
     "achievement": "Grounded, fully auditable AI investigations — zero fabricated risk findings by design",
     "date": "Aug 2026",
     "tags": [
