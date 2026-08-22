@@ -236,5 +236,31 @@
     "demo": null,
     "image": null,
     "hidden": true
+  },
+  {
+    "id": "ta-buddy",
+    "title": "TA Buddy",
+    "description": "Diagnostic tutoring app that traces a student's question back through an LLM-extracted concept-prerequisite graph to find the actual root-cause gap, rather than answering the surface question. Instructors paste in course material and approve the proposed concept map before it's student-facing; students get Socratic calibration checks that redirect to an earlier concept when needed, with every answer grounded and cited from real course chunks; a teacher dashboard surfaces which concepts are systemic root causes versus what students think they're struggling with.",
+    "achievement": "Full-stack LLM pipeline: graph extraction, pgvector retrieval, and a stateful Socratic diagnostic agent",
+    "date": "Aug 2026",
+    "tags": [
+      "Python",
+      "FastAPI",
+      "Next.js",
+      "TypeScript",
+      "OpenAI",
+      "pgvector",
+      "Postgres",
+      "SQLAlchemy",
+      "LLM Agents"
+    ],
+    "category": [
+      "AI",
+      "NLP",
+      "Web Development"
+    ],
+    "github": "https://github.com/JyotBuch/TA-Buddy",
+    "demo": null,
+    "image": null
   }
 ]
