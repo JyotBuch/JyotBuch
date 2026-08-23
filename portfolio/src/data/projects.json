@@ -287,5 +287,29 @@
     "github": null,
     "demo": null,
     "image": null
+  },
+  {
+    "id": "campus-resale",
+    "title": "Campus Resale",
+    "description": "Turns dorm move-out chaos into a real buy-low-sell-high operation. Feed it a listing and it estimates resale value, tells you what to offer, and walks you through negotiating down to a price that actually pencils out.",
+    "achievement": "Deterministic pricing/profit engine with an LLM reasoning layer on top — zero hallucinated numbers by design",
+    "date": "Aug 2026",
+    "tags": [
+      "Python",
+      "FastAPI",
+      "SQLAlchemy",
+      "React",
+      "LangGraph",
+      "OpenAI",
+      "SQLite"
+    ],
+    "category": [
+      "AI",
+      "NLP",
+      "Web Development"
+    ],
+    "github": "https://github.com/JyotBuch/campus-resale",
+    "demo": null,
+    "image": null
   }
 ]
