@@ -146,11 +146,25 @@ const Projects = () => {
 
   const projects = projectsData.filter(project => !project.hidden);
 
-  const categories = ['All', 'Computer Vision', 'NLP', 'Deep Learning', 'ML', 'Data Science', 'Web Development', 'Cloud'];
+  const categories = ['All', 'AI', 'Agents', 'RAG', 'Computer Vision', 'NLP', 'Deep Learning', 'ML', 'Data Science', 'Web Development', 'Cloud'];
 
-  const filteredProjects = activeFilter === 'All'
-    ? projects
-    : projects.filter(project => project.category.includes(activeFilter));
+  const projectMatchesFilter = (project, filter) => {
+    if (filter === 'All') return true;
+
+    const labels = [...project.category, ...project.tags].map(label => label.toLowerCase());
+
+    if (filter === 'AI') {
+      return labels.some(label => label === 'ai' || label.includes('ai product') || label.includes('llm'));
+    }
+
+    if (filter === 'Agents') {
+      return labels.some(label => label.includes('agent'));
+    }
+
+    return labels.some(label => label === filter.toLowerCase());
+  };
+
+  const filteredProjects = projects.filter(project => projectMatchesFilter(project, activeFilter));
 
   const showPreview = (project) => {
     if (project.video) setPreviewProject(project);

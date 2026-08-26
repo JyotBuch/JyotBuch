@@ -286,8 +286,7 @@
     ],
     "github": null,
     "demo": null,
-    "image": null,
-    "video": "/assets/videos/prompt-engineer.mp4"
+    "image": null
   },
   {
     "id": "campus-resale",
@@ -316,8 +315,8 @@
   {
     "id": "prompt-engineer",
     "title": "Prompt Engineer",
-    "description": "Turns a vague business problem into one implementation-ready MVP build prompt, so product teams stop guessing between RAG, agents, workflows, or a plain app before a single line of code gets written. An adaptive Q&A interface interviews the user in plain business language, branching its questions based on prior answers, while deterministic gates check for missing requirements, contradictions, and scope gaps before anything gets compiled into a spec. The output is a single structured prompt an engineer or coding agent can hand straight to a build, with the architecture choice already justified by the requirements rather than picked by default. By separating what the business actually needs from how it eventually gets built, it cuts the two failure modes that sink most AI MVPs: over-engineering a simple problem into an agent framework it never needed, or under-engineering a genuinely stateful workflow into a brittle prompt-and-response loop that falls apart under real usage.",
-    "achievement": "",
+    "description": "Turns a vague business problem into an implementation-ready MVP prompt, using adaptive questions and requirement checks to choose the right architecture before coding begins.",
+    "achievement": "Adaptive discovery with deterministic scope and architecture checks",
     "date": "Aug 2026",
     "tags": [
       "Next.js",
@@ -332,6 +331,7 @@
     ],
     "github": null,
     "demo": null,
-    "image": null
+    "image": null,
+    "video": "/assets/videos/prompt-engineer.mp4"
   }
 ]
