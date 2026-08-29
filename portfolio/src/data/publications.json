@@ -18,5 +18,25 @@
     "link": null,
     "abstract": "Presented research on AI/ML applications in manufacturing processes.",
     "type": "Conference Paper"
+  },
+  {
+    "id": "sapbert-entity-linking-bioinformatics",
+    "title": "Contrastive Fine-Tuning of SapBERT for Biomedical Entity Linking over Large-Scale Ontologies",
+    "journal": "Bioinformatics",
+    "date": "In preparation",
+    "authors": "Jyot Buch et al.",
+    "link": null,
+    "abstract": "Fine-tuned SapBERT via contrastive training on newer ontologies and built an entity linking module over a 6M+ entity FAISS index, achieving 0.675 Recall@1 and 0.736 MRR.",
+    "type": "Manuscript in Preparation"
+  },
+  {
+    "id": "biomedical-knowledge-graph-jamia",
+    "title": "A Biomedical Knowledge Graph for Harmonized Literature Ingestion and Relationship Discovery",
+    "journal": "JAMIA",
+    "date": "In preparation",
+    "authors": "Jyot Buch et al.",
+    "link": null,
+    "abstract": "Designed a biomedical knowledge graph ingesting PubMed literature via REST APIs, with entity harmonization and bulk Neo4j loading, unifying data across 18+ relationship types.",
+    "type": "Manuscript in Preparation"
   }
 ]

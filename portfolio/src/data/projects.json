@@ -1,5 +1,126 @@
 [
   {
+    "id": "thougpt",
+    "title": "ThouGPT",
+    "description": "Gives a small local model a Shakespearean voice through on-device LoRA fine-tuning, no cloud calls needed. Chat with it from any device on your LAN via a manuscript-styled interface.",
+    "achievement": "19 MB adapter on a 4-bit quantized 1.7B model, running fast on an 8 GB M2 MacBook Air",
+    "date": "Aug 2026",
+    "tags": [
+      "MLX",
+      "LoRA",
+      "Qwen3",
+      "Quantization",
+      "Fine-tuning",
+      "WebSockets",
+      "React"
+    ],
+    "category": [
+      "AI",
+      "NLP",
+      "ML"
+    ],
+    "github": "https://github.com/JyotBuch/ThouGPT",
+    "demo": null,
+    "image": null
+  },
+  {
+    "id": "prompt-engineer",
+    "title": "Prompt Engineer",
+    "description": "Turns a vague business problem into an implementation-ready MVP prompt, using adaptive questions and requirement checks to choose the right architecture before coding begins.",
+    "achievement": "Adaptive discovery with deterministic scope and architecture checks",
+    "date": "Aug 2026",
+    "tags": [
+      "Next.js",
+      "TypeScript",
+      "OpenAI",
+      "Zod",
+      "React"
+    ],
+    "category": [
+      "AI Product",
+      "Developer Tools"
+    ],
+    "github": null,
+    "demo": null,
+    "image": null,
+    "video": "/assets/videos/prompt-engineer.mp4"
+  },
+  {
+    "id": "campus-resale",
+    "title": "Campus Resale",
+    "description": "Turns dorm move-out chaos into a real buy-low-sell-high operation. Feed it a listing and it estimates resale value, tells you what to offer, and walks you through negotiating down to a price that actually pencils out.",
+    "achievement": "Deterministic pricing/profit engine with an LLM reasoning layer on top — zero hallucinated numbers by design",
+    "date": "Aug 2026",
+    "tags": [
+      "Python",
+      "FastAPI",
+      "SQLAlchemy",
+      "React",
+      "LangGraph",
+      "OpenAI",
+      "SQLite"
+    ],
+    "category": [
+      "AI",
+      "NLP",
+      "Web Development"
+    ],
+    "github": "https://github.com/JyotBuch/campus-resale",
+    "demo": null,
+    "image": null
+  },
+  {
+    "id": "enterprise-risk-appliance",
+    "title": "Enterprise Risk Appliance",
+    "description": "Lets access-risk analysts ask plain-English questions about who can do what across an enterprise system, and get answers backed by exact evidence, not a black-box guess.",
+    "achievement": "Grounded, fully auditable AI investigations — zero fabricated risk findings by design",
+    "date": "Aug 2026",
+    "tags": [
+      "Python",
+      "FastAPI",
+      "LLM Agents",
+      "Ollama",
+      "PostgreSQL",
+      "SQLAlchemy",
+      "Docker",
+      "Access Governance"
+    ],
+    "category": [
+      "AI",
+      "Security",
+      "Enterprise Software"
+    ],
+    "github": null,
+    "demo": null,
+    "image": null
+  },
+  {
+    "id": "ta-buddy",
+    "title": "TA Buddy",
+    "description": "Helps stuck students by tracing the question back to the concept they're actually missing, not just answering what was asked. Shows teachers where students are really struggling.",
+    "achievement": "End-to-end diagnostic tutor, from concept mapping to grounded Socratic tutoring",
+    "date": "Aug 2026",
+    "tags": [
+      "Python",
+      "FastAPI",
+      "Next.js",
+      "TypeScript",
+      "OpenAI",
+      "pgvector",
+      "Postgres",
+      "SQLAlchemy",
+      "LLM Agents"
+    ],
+    "category": [
+      "AI",
+      "NLP",
+      "Web Development"
+    ],
+    "github": "https://github.com/JyotBuch/TA-Buddy",
+    "demo": null,
+    "image": null
+  },
+  {
     "id": "revisit",
     "title": "Revisit",
     "description": "Turns scattered browsing into a queryable research backlog. Save passages and links on the fly, and it clusters and researches the ones you flagged but didn't have time for.",
@@ -27,6 +148,28 @@
     "video": "/assets/videos/revisit.mp4"
   },
   {
+    "id": "kaggriculture-agent",
+    "title": "Kaggriculture Agent",
+    "description": "Plays Kaggle's farming-simulation game autonomously, planting, watering, harvesting, and selling a crop each round, with a local viewer to replay and review any match.",
+    "achievement": "",
+    "date": "Aug 2026",
+    "tags": [
+      "Python",
+      "Kaggle",
+      "Reinforcement Learning",
+      "Simulation",
+      "kaggle-environments"
+    ],
+    "category": [
+      "ML",
+      "Simulation"
+    ],
+    "github": "https://github.com/JyotBuch/kaggriculture",
+    "demo": null,
+    "image": null,
+    "hidden": true
+  },
+  {
     "id": "vetoclub-ai",
     "title": "VetoClub.AI (LetsPlanIt)",
     "description": "Plans group outings right inside your iMessage group chat, no separate app needed. It picks up on dates and preferences as your friends text, then chimes in when the group needs a nudge.",
@@ -46,28 +189,6 @@
       "Web Development"
     ],
     "github": "https://github.com/JyotBuch/VetoClub.AI",
-    "demo": null,
-    "image": null
-  },
-  {
-    "id": "terminal-agent",
-    "title": "Terminal Agent",
-    "description": "Fixes your terminal mistakes before you have to go Google them. The moment a command fails, it looks up what likely went wrong and hands you a fix on the spot.",
-    "achievement": "Intelligent error resolution with LLM-powered debugging",
-    "date": "Jan 2026",
-    "tags": [
-      "LLMs",
-      "GPT-4",
-      "FAISS",
-      "LangChain",
-      "Flask"
-    ],
-    "category": [
-      "NLP",
-      "ML",
-      "Web Development"
-    ],
-    "github": "https://github.com/JyotBuch/terminal-agent",
     "demo": null,
     "image": null
   },
@@ -95,22 +216,24 @@
     "image": null
   },
   {
-    "id": "dribble-ai",
-    "title": "Dribble.AI",
-    "description": "Watches soccer match footage and automatically tags the passes, shots, and momentum shifts a coach would care about, turning raw video into a searchable breakdown of the game.",
-    "achievement": "Achieved 0.713 mAP@0.75 score",
-    "date": "Apr–May 2025",
+    "id": "terminal-agent",
+    "title": "Terminal Agent",
+    "description": "Fixes your terminal mistakes before you have to go Google them. The moment a command fails, it looks up what likely went wrong and hands you a fix on the spot.",
+    "achievement": "Intelligent error resolution with LLM-powered debugging",
+    "date": "Jan 2026",
     "tags": [
-      "Computer Vision",
-      "Deep Learning",
-      "PyTorch",
-      "Transformers"
+      "LLMs",
+      "GPT-4",
+      "FAISS",
+      "LangChain",
+      "Flask"
     ],
     "category": [
-      "Computer Vision",
-      "Deep Learning"
+      "NLP",
+      "ML",
+      "Web Development"
     ],
-    "github": "https://github.com/JyotBuch/DribbleAI",
+    "github": "https://github.com/JyotBuch/terminal-agent",
     "demo": null,
     "image": null
   },
@@ -132,6 +255,46 @@
     ],
     "github": "https://www.linkedin.com/in/jyot-buch/",
     "demo": null,
+    "image": null
+  },
+  {
+    "id": "dribble-ai",
+    "title": "Dribble.AI",
+    "description": "Watches soccer match footage and automatically tags the passes, shots, and momentum shifts a coach would care about, turning raw video into a searchable breakdown of the game.",
+    "achievement": "Achieved 0.713 mAP@0.75 score",
+    "date": "Apr–May 2025",
+    "tags": [
+      "Computer Vision",
+      "Deep Learning",
+      "PyTorch",
+      "Transformers"
+    ],
+    "category": [
+      "Computer Vision",
+      "Deep Learning"
+    ],
+    "github": "https://github.com/JyotBuch/DribbleAI",
+    "demo": null,
+    "image": null
+  },
+  {
+    "id": "semantic-clustering-model-cards",
+    "title": "Semantic Clustering for Model Cards",
+    "description": "Turns HuggingFace's sprawling catalog of model cards into an interactive map, making it easy to browse and discover similar models instead of scrolling through search results.",
+    "achievement": "Enhanced model discoverability",
+    "date": "Apr–May 2025",
+    "tags": [
+      "NLP",
+      "Clustering",
+      "Visualization",
+      "HuggingFace"
+    ],
+    "category": [
+      "NLP",
+      "Data Science"
+    ],
+    "github": "https://colab.research.google.com/drive/1-IsSH5b2m2ZeP32ywdXXFMvpj3ooNMfh?usp=sharing",
+    "demo": "#",
     "image": null
   },
   {
@@ -176,26 +339,6 @@
     "video": "/assets/videos/agrotalk.mp4"
   },
   {
-    "id": "semantic-clustering-model-cards",
-    "title": "Semantic Clustering for Model Cards",
-    "description": "Turns HuggingFace's sprawling catalog of model cards into an interactive map, making it easy to browse and discover similar models instead of scrolling through search results.",
-    "achievement": "Enhanced model discoverability",
-    "date": "Apr–May 2025",
-    "tags": [
-      "NLP",
-      "Clustering",
-      "Visualization",
-      "HuggingFace"
-    ],
-    "category": [
-      "NLP",
-      "Data Science"
-    ],
-    "github": "https://colab.research.google.com/drive/1-IsSH5b2m2ZeP32ywdXXFMvpj3ooNMfh?usp=sharing",
-    "demo": "#",
-    "image": null
-  },
-  {
     "id": "drawing-to-data",
     "title": "Drawing-to-Data (D2D)",
     "description": "Reads engineering drawings the way an inspector would, spotting the relevant regions and pulling out the text, to speed up compliance checks that used to be done by hand.",
@@ -214,124 +357,5 @@
     "github": "https://www.linkedin.com/in/jyot-buch/",
     "demo": null,
     "image": null
-  },
-  {
-    "id": "kaggriculture-agent",
-    "title": "Kaggriculture Agent",
-    "description": "Plays Kaggle's farming-simulation game autonomously, planting, watering, harvesting, and selling a crop each round, with a local viewer to replay and review any match.",
-    "achievement": "",
-    "date": "Aug 2026",
-    "tags": [
-      "Python",
-      "Kaggle",
-      "Reinforcement Learning",
-      "Simulation",
-      "kaggle-environments"
-    ],
-    "category": [
-      "ML",
-      "Simulation"
-    ],
-    "github": "https://github.com/JyotBuch/kaggriculture",
-    "demo": null,
-    "image": null,
-    "hidden": true
-  },
-  {
-    "id": "ta-buddy",
-    "title": "TA Buddy",
-    "description": "Helps stuck students by tracing the question back to the concept they're actually missing, not just answering what was asked. Shows teachers where students are really struggling.",
-    "achievement": "End-to-end diagnostic tutor, from concept mapping to grounded Socratic tutoring",
-    "date": "Aug 2026",
-    "tags": [
-      "Python",
-      "FastAPI",
-      "Next.js",
-      "TypeScript",
-      "OpenAI",
-      "pgvector",
-      "Postgres",
-      "SQLAlchemy",
-      "LLM Agents"
-    ],
-    "category": [
-      "AI",
-      "NLP",
-      "Web Development"
-    ],
-    "github": "https://github.com/JyotBuch/TA-Buddy",
-    "demo": null,
-    "image": null
-  },
-  {
-    "id": "enterprise-risk-appliance",
-    "title": "Enterprise Risk Appliance",
-    "description": "Lets access-risk analysts ask plain-English questions about who can do what across an enterprise system, and get answers backed by exact evidence, not a black-box guess.",
-    "achievement": "Grounded, fully auditable AI investigations — zero fabricated risk findings by design",
-    "date": "Aug 2026",
-    "tags": [
-      "Python",
-      "FastAPI",
-      "LLM Agents",
-      "Ollama",
-      "PostgreSQL",
-      "SQLAlchemy",
-      "Docker",
-      "Access Governance"
-    ],
-    "category": [
-      "AI",
-      "Security",
-      "Enterprise Software"
-    ],
-    "github": null,
-    "demo": null,
-    "image": null
-  },
-  {
-    "id": "campus-resale",
-    "title": "Campus Resale",
-    "description": "Turns dorm move-out chaos into a real buy-low-sell-high operation. Feed it a listing and it estimates resale value, tells you what to offer, and walks you through negotiating down to a price that actually pencils out.",
-    "achievement": "Deterministic pricing/profit engine with an LLM reasoning layer on top — zero hallucinated numbers by design",
-    "date": "Aug 2026",
-    "tags": [
-      "Python",
-      "FastAPI",
-      "SQLAlchemy",
-      "React",
-      "LangGraph",
-      "OpenAI",
-      "SQLite"
-    ],
-    "category": [
-      "AI",
-      "NLP",
-      "Web Development"
-    ],
-    "github": "https://github.com/JyotBuch/campus-resale",
-    "demo": null,
-    "image": null
-  },
-  {
-    "id": "prompt-engineer",
-    "title": "Prompt Engineer",
-    "description": "Turns a vague business problem into an implementation-ready MVP prompt, using adaptive questions and requirement checks to choose the right architecture before coding begins.",
-    "achievement": "Adaptive discovery with deterministic scope and architecture checks",
-    "date": "Aug 2026",
-    "tags": [
-      "Next.js",
-      "TypeScript",
-      "OpenAI",
-      "Zod",
-      "React"
-    ],
-    "category": [
-      "AI Product",
-      "Developer Tools"
-    ],
-    "github": null,
-    "demo": null,
-    "image": null,
-    "video": "/assets/videos/prompt-engineer.mp4"
   }
 ]
