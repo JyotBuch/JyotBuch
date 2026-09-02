@@ -1,42 +1,21 @@
 [
   {
-    "id": "water-potability-ml",
-    "title": "Drinking water potability prediction using machine learning approaches: a case study of Indian rivers",
-    "journal": "Water Practice & Technology",
-    "date": "Dec 2023",
-    "authors": "Jyot Buch et al.",
-    "link": "https://doi.org/10.2166/wpt.2023.202",
-    "abstract": "Research on predicting water potability using ML techniques for Indian rivers.",
-    "type": "Journal Article"
-  },
-  {
-    "id": "ml-ai-die-casting",
-    "title": "Applications of Machine Learning and Artificial Intelligence in Metal Die Casting",
-    "conference": "ALUCAST, India",
-    "date": "Jan 2022",
-    "authors": "Jyot Buch",
+    "id": "doc-dimb-re",
+    "title": "Doc-DiMB-RE: Constructing Document-Level Diet–Microbiome Associations with LLM-Based Entity Linking",
+    "date": "May 2026",
+    "authors": "Gibong Hong, Yikun Han, Jyot Buch, Sirapop Umnakkittikul, and Halil Kilicoglu",
     "link": null,
-    "abstract": "Presented research on AI/ML applications in manufacturing processes.",
-    "type": "Conference Paper"
+    "abstract": "Introduces Doc-DiMB-RE, a document-level dataset for extracting diet–microbiome–disease relationships, together with a multi-ontology entity-linking framework that combines SapBERT candidate retrieval with LLM-based reranking. The work aims to standardize biomedical concepts across nine ontologies and support reliable knowledge-graph construction.",
+    "type": "Preprint"
   },
   {
-    "id": "sapbert-entity-linking-bioinformatics",
-    "title": "Contrastive Fine-Tuning of SapBERT for Biomedical Entity Linking over Large-Scale Ontologies",
+    "id": "cih-kg",
+    "title": "CIH-KG: A Provenance-Aware, Biolink-Aligned Knowledge Graph Integrating Complementary and Integrative Health Evidence",
     "journal": "Bioinformatics",
-    "date": "In preparation",
-    "authors": "Jyot Buch et al.",
+    "date": "2026",
+    "authors": "Yikun Han, Cesar Bernabe, Jyot Buch, Drshika Asher, Luigi Marini, Cui Tao, Rui Zhang, and Halil Kilicoglu",
     "link": null,
-    "abstract": "Fine-tuned SapBERT via contrastive training on newer ontologies and built an entity linking module over a 6M+ entity FAISS index, achieving 0.675 Recall@1 and 0.736 MRR.",
-    "type": "Manuscript in Preparation"
-  },
-  {
-    "id": "biomedical-knowledge-graph-jamia",
-    "title": "A Biomedical Knowledge Graph for Harmonized Literature Ingestion and Relationship Discovery",
-    "journal": "JAMIA",
-    "date": "In preparation",
-    "authors": "Jyot Buch et al.",
-    "link": null,
-    "abstract": "Designed a biomedical knowledge graph ingesting PubMed literature via REST APIs, with entity harmonization and bulk Neo4j loading, unifying data across 18+ relationship types.",
-    "type": "Manuscript in Preparation"
+    "abstract": "Presents CIH-KG, a provenance-aware, Biolink-aligned integration of 14 complementary and integrative health data sources. The graph contains 111,940 nodes and 963,789 edges and is designed to support cross-resource retrieval, graph completion, and hypothesis generation while preserving source attribution.",
+    "type": "Journal Article"
   }
 ]
